@@ -22,7 +22,7 @@
         </video>
     </div>
 
-    <!-- overlay -->
+    <!-- overlay --> 
     <div class="zn1 absolute top-0 left-0 right-0 bottom-0 || bg-black opacity-80" data-colour></div>
 
     <!-- flare -->
