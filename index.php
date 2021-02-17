@@ -10,7 +10,7 @@
     <span class="fas fa-user white padding-r20"></span>
     <span class="fas fa-shopping-basket white"></span>
 </div>
-</div>
+</div> 
 
 <div class="bg-blue || relative z1 overflow-hidden">
 
