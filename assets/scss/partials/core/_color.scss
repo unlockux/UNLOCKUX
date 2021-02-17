@@ -1,0 +1,23 @@
+// Colour
+
+@each $color-name, $color-hex in $colors {
+    .#{$color-name},.hover-color-#{$color-name}:hover:not(.active), .hover-#{$color-name}:hover:not(.active) { color: $color-hex; }
+}
+
+//@if map-get($includes, breakpoint-colours) {
+    // @each $breakpoint-name, $breakpoint-value in $breakpoints {
+    //     @include media-query($breakpoint-name) {
+    //         @each $color-name, $color-hex in $colors {
+    //             .#{$color-name}-#{$breakpoint-name},.hover-#{$color-name}-#{$breakpoint-name}:hover,.hover-color-#{$color-name}-#{$breakpoint-name}:hover { color: $color-hex; }
+    //         }
+    //     }
+    // }
+//}
+
+//@if map-get($includes, grey-colours) {
+// Greys
+    // @each $grey-name, $grey-hex in $greys {
+    //     .#{$grey-name} { color: $grey-hex; }
+    //     .hover-color-#{$grey-name}:hover:not(.active), .hover-#{$grey-name}:hover:not(.active) { color: $grey-hex; }
+    // }
+//}

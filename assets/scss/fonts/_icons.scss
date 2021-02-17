@@ -1,0 +1,831 @@
+@font-face {
+	font-family: "VMCustomFont";
+	src: url('../iconfont/VMCustomFont.eot');
+	src: url('../iconfont/VMCustomFont.eot?#iefix') format('eot'),
+		url('../iconfont/VMCustomFont.woff2') format('woff2'),
+		url('../iconfont/VMCustomFont.woff') format('woff'),
+		url('../iconfont/VMCustomFont.ttf') format('truetype'),
+		url('../iconfont/VMCustomFont.svg#VMCustomFont') format('svg');
+}
+
+@mixin vm-styles {
+	font-family: "VMCustomFont";
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: normal;
+	line-height: normal;
+	// speak: none; // only necessary if not using the private unicode range (firstGlyph option)
+	text-decoration: none;
+	text-transform: none;
+}
+// .fi-stack {
+//   position: relative;
+//   display: inline-block;
+//   width: 1em;
+//   height: 1em;
+//   line-height: 1em;
+//   vertical-align: middle;
+// }
+//
+// .fi-stack-icon {
+//   position: absolute;
+//   left: 0;
+//   width: 100%;
+//   text-align: center;
+//   line-height: inherit;
+// }
+
+%vm {
+	@include vm-styles;
+}
+
+@function vm-char($filename) {
+	$char: "";
+
+	@if $filename == icon-1tb {
+		$char: '\E001';
+	}
+	@if $filename == icon-4g {
+		$char: '\E002';
+	}
+	@if $filename == icon-alert {
+		$char: '\E003';
+	}
+	@if $filename == icon-all-cable {
+		$char: '\E004';
+	}
+	@if $filename == icon-apps {
+		$char: '\E005';
+	}
+	@if $filename == icon-award {
+		$char: '\E006';
+	}
+	@if $filename == icon-basket {
+		$char: '\E007';
+	}
+	@if $filename == icon-bike {
+		$char: '\E008';
+	}
+	@if $filename == icon-bill {
+		$char: '\E009';
+	}
+	@if $filename == icon-billing {
+		$char: '\E00A';
+	}
+	@if $filename == icon-bluetooth {
+		$char: '\E00B';
+	}
+	@if $filename == icon-booster-benefit {
+		$char: '\E00C';
+	}
+	@if $filename == icon-booster {
+		$char: '\E00D';
+	}
+	@if $filename == icon-boxsets {
+		$char: '\E00E';
+	}
+	@if $filename == icon-bundle {
+		$char: '\E00F';
+	}
+	@if $filename == icon-cable {
+		$char: '\E010';
+	}
+	@if $filename == icon-cake {
+		$char: '\E011';
+	}
+	@if $filename == icon-calls {
+		$char: '\E012';
+	}
+	@if $filename == icon-camera {
+		$char: '\E013';
+	}
+	@if $filename == icon-car {
+		$char: '\E014';
+	}
+	@if $filename == icon-check {
+		$char: '\E015';
+	}
+	@if $filename == icon-clock {
+		$char: '\E016';
+	}
+	@if $filename == icon-close {
+		$char: '\E017';
+	}
+	@if $filename == icon-connection {
+		$char: '\E018';
+	}
+	@if $filename == icon-coverage {
+		$char: '\E019';
+	}
+	@if $filename == icon-credit-card {
+		$char: '\E01A';
+	}
+	@if $filename == icon-data-free {
+		$char: '\E01B';
+	}
+	@if $filename == icon-data-rollover {
+		$char: '\E01C';
+	}
+	@if $filename == icon-direction {
+		$char: '\E01D';
+	}
+	@if $filename == icon-document {
+		$char: '\E01E';
+	}
+	@if $filename == icon-download {
+		$char: '\E01F';
+	}
+	@if $filename == icon-email-to-read {
+		$char: '\E020';
+	}
+	@if $filename == icon-enable-location {
+		$char: '\E021';
+	}
+	@if $filename == icon-fastest-box {
+		$char: '\E022';
+	}
+	@if $filename == icon-film {
+		$char: '\E023';
+	}
+	@if $filename == icon-find-remote {
+		$char: '\E024';
+	}
+	@if $filename == icon-fingerprint {
+		$char: '\E025';
+	}
+	@if $filename == icon-firework {
+		$char: '\E026';
+	}
+	@if $filename == icon-gaming {
+		$char: '\E027';
+	}
+	@if $filename == icon-gift {
+		$char: '\E028';
+	}
+	@if $filename == icon-headset {
+		$char: '\E029';
+	}
+	@if $filename == icon-home {
+		$char: '\E02A';
+	}
+	@if $filename == icon-hub-3 {
+		$char: '\E02B';
+	}
+	@if $filename == icon-hub-4 {
+		$char: '\E02C';
+	}
+	@if $filename == icon-info {
+		$char: '\E02D';
+	}
+	@if $filename == icon-landline {
+		$char: '\E02E';
+	}
+	@if $filename == icon-laptop {
+		$char: '\E02F';
+	}
+	@if $filename == icon-lightbulb {
+		$char: '\E030';
+	}
+	@if $filename == icon-lightning {
+		$char: '\E031';
+	}
+	@if $filename == icon-message {
+		$char: '\E032';
+	}
+	@if $filename == icon-messaging-add-chat {
+		$char: '\E033';
+	}
+	@if $filename == icon-messaging-chat {
+		$char: '\E034';
+	}
+	@if $filename == icon-mobile-unavailable {
+		$char: '\E035';
+	}
+	@if $filename == icon-mobile {
+		$char: '\E036';
+	}
+	@if $filename == icon-money {
+		$char: '\E037';
+	}
+	@if $filename == icon-more {
+		$char: '\E038';
+	}
+	@if $filename == icon-moving-home {
+		$char: '\E039';
+	}
+	@if $filename == icon-notebook {
+		$char: '\E03A';
+	}
+	@if $filename == icon-phone {
+		$char: '\E03B';
+	}
+	@if $filename == icon-piggy-bank {
+		$char: '\E03C';
+	}
+	@if $filename == icon-pin {
+		$char: '\E03D';
+	}
+	@if $filename == icon-plane {
+		$char: '\E03E';
+	}
+	@if $filename == icon-plek {
+		$char: '\E03F';
+	}
+	@if $filename == icon-popcorn {
+		$char: '\E040';
+	}
+	@if $filename == icon-postage {
+		$char: '\E041';
+	}
+	@if $filename == icon-pound-dots {
+		$char: '\E042';
+	}
+	@if $filename == icon-profile-picture {
+		$char: '\E043';
+	}
+	@if $filename == icon-question {
+		$char: '\E044';
+	}
+	@if $filename == icon-quickstart {
+		$char: '\E045';
+	}
+	@if $filename == icon-radio {
+		$char: '\E046';
+	}
+	@if $filename == icon-raf {
+		$char: '\E047';
+	}
+	@if $filename == icon-remote {
+		$char: '\E048';
+	}
+	@if $filename == icon-rocket {
+		$char: '\E049';
+	}
+	@if $filename == icon-scan-your-home {
+		$char: '\E04A';
+	}
+	@if $filename == icon-secure-file {
+		$char: '\E04B';
+	}
+	@if $filename == icon-secure-network {
+		$char: '\E04C';
+	}
+	@if $filename == icon-settings {
+		$char: '\E04D';
+	}
+	@if $filename == icon-sim-exchange {
+		$char: '\E04E';
+	}
+	@if $filename == icon-sim-swap {
+		$char: '\E04F';
+	}
+	@if $filename == icon-sim {
+		$char: '\E050';
+	}
+	@if $filename == icon-spanner {
+		$char: '\E051';
+	}
+	@if $filename == icon-speed-dial {
+		$char: '\E052';
+	}
+	@if $filename == icon-stream {
+		$char: '\E053';
+	}
+	@if $filename == icon-terms-of-use {
+		$char: '\E054';
+	}
+	@if $filename == icon-tickets {
+		$char: '\E055';
+	}
+	@if $filename == icon-time {
+		$char: '\E056';
+	}
+	@if $filename == icon-train {
+		$char: '\E057';
+	}
+	@if $filename == icon-truck-alt {
+		$char: '\E058';
+	}
+	@if $filename == icon-truck {
+		$char: '\E059';
+	}
+	@if $filename == icon-tv {
+		$char: '\E05A';
+	}
+	@if $filename == icon-uhd {
+		$char: '\E05B';
+	}
+	@if $filename == icon-umbrella {
+		$char: '\E05C';
+	}
+	@if $filename == icon-update {
+		$char: '\E05D';
+	}
+	@if $filename == icon-user-plek {
+		$char: '\E05E';
+	}
+	@if $filename == icon-user {
+		$char: '\E05F';
+	}
+	@if $filename == icon-v6-box-times-two {
+		$char: '\E060';
+	}
+	@if $filename == icon-v6-box {
+		$char: '\E061';
+	}
+	@if $filename == icon-virgin-full {
+		$char: '\E062';
+	}
+	@if $filename == icon-virgin-simple {
+		$char: '\E063';
+	}
+	@if $filename == icon-virus-protect {
+		$char: '\E064';
+	}
+	@if $filename == icon-vm-at-home {
+		$char: '\E065';
+	}
+	@if $filename == icon-wall-box-internal {
+		$char: '\E066';
+	}
+	@if $filename == icon-websafe-child {
+		$char: '\E067';
+	}
+	@if $filename == icon-websafe {
+		$char: '\E068';
+	}
+	@if $filename == icon-wifi-home-unavailable {
+		$char: '\E069';
+	}
+	@if $filename == icon-wifi-home {
+		$char: '\E06A';
+	}
+	@if $filename == icon-wifi-hotspot-unavailable {
+		$char: '\E06B';
+	}
+	@if $filename == icon-wifi-hotspot {
+		$char: '\E06C';
+	}
+	@if $filename == icon-wifi-unavailable {
+		$char: '\E06D';
+	}
+	@if $filename == icon-wifi {
+		$char: '\E06E';
+	}
+
+	@return $char;
+}
+
+@mixin vm($filename, $insert: before, $extend: true) {
+	&:#{$insert} {
+		@if $extend {
+			@extend %vm;
+		} @else {
+			@include vm-styles;
+		}
+		content: vm-char($filename);
+	}
+}
+
+
+.vm-icon-1tb {
+	@include vm(icon-1tb);
+}
+
+.vm-icon-4g {
+	@include vm(icon-4g);
+}
+
+.vm-icon-alert {
+	@include vm(icon-alert);
+}
+
+.vm-icon-all-cable {
+	@include vm(icon-all-cable);
+}
+
+.vm-icon-apps {
+	@include vm(icon-apps);
+}
+
+.vm-icon-award {
+	@include vm(icon-award);
+}
+
+.vm-icon-basket {
+	@include vm(icon-basket);
+}
+
+.vm-icon-bike {
+	@include vm(icon-bike);
+}
+
+.vm-icon-bill {
+	@include vm(icon-bill);
+}
+
+.vm-icon-billing {
+	@include vm(icon-billing);
+}
+
+.vm-icon-bluetooth {
+	@include vm(icon-bluetooth);
+}
+
+.vm-icon-booster-benefit {
+	@include vm(icon-booster-benefit);
+}
+
+.vm-icon-booster {
+	@include vm(icon-booster);
+}
+
+.vm-icon-boxsets {
+	@include vm(icon-boxsets);
+}
+
+.vm-icon-bundle {
+	@include vm(icon-bundle);
+}
+
+.vm-icon-cable {
+	@include vm(icon-cable);
+}
+
+.vm-icon-cake {
+	@include vm(icon-cake);
+}
+
+.vm-icon-calls {
+	@include vm(icon-calls);
+}
+
+.vm-icon-camera {
+	@include vm(icon-camera);
+}
+
+.vm-icon-car {
+	@include vm(icon-car);
+}
+
+.vm-icon-check {
+	@include vm(icon-check);
+}
+
+.vm-icon-clock {
+	@include vm(icon-clock);
+}
+
+.vm-icon-close {
+	@include vm(icon-close);
+}
+
+.vm-icon-connection {
+	@include vm(icon-connection);
+}
+
+.vm-icon-coverage {
+	@include vm(icon-coverage);
+}
+
+.vm-icon-credit-card {
+	@include vm(icon-credit-card);
+}
+
+.vm-icon-data-free {
+	@include vm(icon-data-free);
+}
+
+.vm-icon-data-rollover {
+	@include vm(icon-data-rollover);
+}
+
+.vm-icon-direction {
+	@include vm(icon-direction);
+}
+
+.vm-icon-document {
+	@include vm(icon-document);
+}
+
+.vm-icon-download {
+	@include vm(icon-download);
+}
+
+.vm-icon-email-to-read {
+	@include vm(icon-email-to-read);
+}
+
+.vm-icon-enable-location {
+	@include vm(icon-enable-location);
+}
+
+.vm-icon-fastest-box {
+	@include vm(icon-fastest-box);
+}
+
+.vm-icon-film {
+	@include vm(icon-film);
+}
+
+.vm-icon-find-remote {
+	@include vm(icon-find-remote);
+}
+
+.vm-icon-fingerprint {
+	@include vm(icon-fingerprint);
+}
+
+.vm-icon-firework {
+	@include vm(icon-firework);
+}
+
+.vm-icon-gaming {
+	@include vm(icon-gaming);
+}
+
+.vm-icon-gift {
+	@include vm(icon-gift);
+}
+
+.vm-icon-headset {
+	@include vm(icon-headset);
+}
+
+.vm-icon-home {
+	@include vm(icon-home);
+}
+
+.vm-icon-hub-3 {
+	@include vm(icon-hub-3);
+}
+
+.vm-icon-hub-4 {
+	@include vm(icon-hub-4);
+}
+
+.vm-icon-info {
+	@include vm(icon-info);
+}
+
+.vm-icon-landline {
+	@include vm(icon-landline);
+}
+
+.vm-icon-laptop {
+	@include vm(icon-laptop);
+}
+
+.vm-icon-lightbulb {
+	@include vm(icon-lightbulb);
+}
+
+.vm-icon-lightning {
+	@include vm(icon-lightning);
+}
+
+.vm-icon-message {
+	@include vm(icon-message);
+}
+
+.vm-icon-messaging-add-chat {
+	@include vm(icon-messaging-add-chat);
+}
+
+.vm-icon-messaging-chat {
+	@include vm(icon-messaging-chat);
+}
+
+.vm-icon-mobile-unavailable {
+	@include vm(icon-mobile-unavailable);
+}
+
+.vm-icon-mobile {
+	@include vm(icon-mobile);
+}
+
+.vm-icon-money {
+	@include vm(icon-money);
+}
+
+.vm-icon-more {
+	@include vm(icon-more);
+}
+
+.vm-icon-moving-home {
+	@include vm(icon-moving-home);
+}
+
+.vm-icon-notebook {
+	@include vm(icon-notebook);
+}
+
+.vm-icon-phone {
+	@include vm(icon-phone);
+}
+
+.vm-icon-piggy-bank {
+	@include vm(icon-piggy-bank);
+}
+
+.vm-icon-pin {
+	@include vm(icon-pin);
+}
+
+.vm-icon-plane {
+	@include vm(icon-plane);
+}
+
+.vm-icon-plek {
+	@include vm(icon-plek);
+}
+
+.vm-icon-popcorn {
+	@include vm(icon-popcorn);
+}
+
+.vm-icon-postage {
+	@include vm(icon-postage);
+}
+
+.vm-icon-pound-dots {
+	@include vm(icon-pound-dots);
+}
+
+.vm-icon-profile-picture {
+	@include vm(icon-profile-picture);
+}
+
+.vm-icon-question {
+	@include vm(icon-question);
+}
+
+.vm-icon-quickstart {
+	@include vm(icon-quickstart);
+}
+
+.vm-icon-radio {
+	@include vm(icon-radio);
+}
+
+.vm-icon-raf {
+	@include vm(icon-raf);
+}
+
+.vm-icon-remote {
+	@include vm(icon-remote);
+}
+
+.vm-icon-rocket {
+	@include vm(icon-rocket);
+}
+
+.vm-icon-scan-your-home {
+	@include vm(icon-scan-your-home);
+}
+
+.vm-icon-secure-file {
+	@include vm(icon-secure-file);
+}
+
+.vm-icon-secure-network {
+	@include vm(icon-secure-network);
+}
+
+.vm-icon-settings {
+	@include vm(icon-settings);
+}
+
+.vm-icon-sim-exchange {
+	@include vm(icon-sim-exchange);
+}
+
+.vm-icon-sim-swap {
+	@include vm(icon-sim-swap);
+}
+
+.vm-icon-sim {
+	@include vm(icon-sim);
+}
+
+.vm-icon-spanner {
+	@include vm(icon-spanner);
+}
+
+.vm-icon-speed-dial {
+	@include vm(icon-speed-dial);
+}
+
+.vm-icon-stream {
+	@include vm(icon-stream);
+}
+
+.vm-icon-terms-of-use {
+	@include vm(icon-terms-of-use);
+}
+
+.vm-icon-tickets {
+	@include vm(icon-tickets);
+}
+
+.vm-icon-time {
+	@include vm(icon-time);
+}
+
+.vm-icon-train {
+	@include vm(icon-train);
+}
+
+.vm-icon-truck-alt {
+	@include vm(icon-truck-alt);
+}
+
+.vm-icon-truck {
+	@include vm(icon-truck);
+}
+
+.vm-icon-tv {
+	@include vm(icon-tv);
+}
+
+.vm-icon-uhd {
+	@include vm(icon-uhd);
+}
+
+.vm-icon-umbrella {
+	@include vm(icon-umbrella);
+}
+
+.vm-icon-update {
+	@include vm(icon-update);
+}
+
+.vm-icon-user-plek {
+	@include vm(icon-user-plek);
+}
+
+.vm-icon-user {
+	@include vm(icon-user);
+}
+
+.vm-icon-v6-box-times-two {
+	@include vm(icon-v6-box-times-two);
+}
+
+.vm-icon-v6-box {
+	@include vm(icon-v6-box);
+}
+
+.vm-icon-virgin-full {
+	@include vm(icon-virgin-full);
+}
+
+.vm-icon-virgin-simple {
+	@include vm(icon-virgin-simple);
+}
+
+.vm-icon-virus-protect {
+	@include vm(icon-virus-protect);
+}
+
+.vm-icon-vm-at-home {
+	@include vm(icon-vm-at-home);
+}
+
+.vm-icon-wall-box-internal {
+	@include vm(icon-wall-box-internal);
+}
+
+.vm-icon-websafe-child {
+	@include vm(icon-websafe-child);
+}
+
+.vm-icon-websafe {
+	@include vm(icon-websafe);
+}
+
+.vm-icon-wifi-home-unavailable {
+	@include vm(icon-wifi-home-unavailable);
+}
+
+.vm-icon-wifi-home {
+	@include vm(icon-wifi-home);
+}
+
+.vm-icon-wifi-hotspot-unavailable {
+	@include vm(icon-wifi-hotspot-unavailable);
+}
+
+.vm-icon-wifi-hotspot {
+	@include vm(icon-wifi-hotspot);
+}
+
+.vm-icon-wifi-unavailable {
+	@include vm(icon-wifi-unavailable);
+}
+
+.vm-icon-wifi {
+	@include vm(icon-wifi);
+}

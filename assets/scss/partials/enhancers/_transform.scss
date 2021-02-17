@@ -1,0 +1,21 @@
+// Translate
+
+.translate { transform: translate(-50%, -50%); }
+.translate-y { transform: translateY(-50%); }
+.translate-x { transform: translateX(-50%); }
+
+.flipY { transform: scaleY(-1); }
+.flipY { transform: scaleX(-1); }
+.flipXY { transform: scaleX(-1) scaleY(-1); }
+
+.rotate-90 { transform: rotate(90deg); }
+.rotate-180 { transform: rotate(180deg); }
+.rotate-270 { transform: rotate(270deg); } 
+
+@each $breakpoint-name, $breakpoint-value in $breakpoints {
+    @include media-query($breakpoint-name) {
+        .translate-#{$breakpoint-name} { transform: translate(-50%, -50%); }
+        .translate-y-#{$breakpoint-name} { transform: translateY(-50%); }
+        .translate-x-#{$breakpoint-name} { transform: translateX(-50%); }
+    }
+}

@@ -1,0 +1,58 @@
+// Display
+
+.inline { display: inline; }
+.block { display: block; }
+.inline-block { display: inline-block; }
+.table { display: table; }
+.table-row { display: table-row; }
+.table-cell { display: table-cell; }
+
+
+// Remove
+
+.display-none { display: none; }
+.hide { display: none; }
+.visibility-hidden { visibility: hidden; }
+
+
+
+// Accessible remove
+.visually-hidden{
+    position: static !important;
+    height: auto;
+    width: auto;
+    overflow: visible;
+    clip: auto;
+    margin: auto;
+    padding: auto;
+}
+
+
+@each $breakpoint-name, $breakpoint-value in $breakpoints {
+    @include media-query($breakpoint-name) {
+        .inline-#{$breakpoint-name} { display:inline; }
+        .block-#{$breakpoint-name} { display: block; }
+        .inline-block-#{$breakpoint-name} { display: inline-block; }
+        .table-#{$breakpoint-name} { display: table; }
+        .table-row-#{$breakpoint-name} { display: table-row; }
+        .table-cell-#{$breakpoint-name} { display: table-cell; }
+        .display-none-#{$breakpoint-name} { display: none; }
+        .hide-#{$breakpoint-name} { display: none; }
+        .visually-hidden-#{$breakpoint-name}{
+            position: static !important;
+            height: auto;
+            width: auto;
+            overflow: visible;
+            clip: auto;
+            margin: auto;
+            padding: auto;
+        }
+    }
+}
+
+@media (min-width: $breakpoint-md) and (max-width: $breakpoint-lg) {
+    .block-medium { display:block; }
+}
+@media (min-width: $breakpoint-sm) and (max-width: $breakpoint-lg) {
+    .block-tablet { display:block; }
+}

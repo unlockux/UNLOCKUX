@@ -1,0 +1,60 @@
+// Position
+
+
+.static { position: static; }
+.relative { position: relative; }
+.absolute { position: absolute; }
+.fixed { position: fixed; }
+
+
+// Sides
+
+.top-auto { top: auto; }
+.top-0 { top: 0; }
+.top-50 { top: 50%; }
+.top-100 { top: 100%; }
+
+.right-auto { right: auto; }
+.right-0 { right: 0; }
+.right-50 { right: 50%; }
+.right-100 { right: 100%; }
+
+.bottom-auto { bottom: auto; }
+.bottom-0 { bottom: 0; }
+.bottom-50 { bottom: 50%; }
+.bottom-100 { bottom: 100%; }
+
+.left-auto { left: auto; }
+.left-0 { left: 0; }
+.left-25 { left: 25%; }
+.left-50 { left: 50%; }
+.left-75 { left: 75%; }
+.left-100 { left: 100%; }
+
+
+@each $breakpoint-name, $breakpoint-value in $breakpoints {
+    @include media-query($breakpoint-name) {
+        .static-#{$breakpoint-name} { position: static; }
+        .relative-#{$breakpoint-name} { position: relative; }
+        .absolute-#{$breakpoint-name} { position: absolute; }
+        .fixed-#{$breakpoint-name} { position: fixed; }
+        .top-auto-#{$breakpoint-name} { top: auto; }
+        .top-0-#{$breakpoint-name} { top: 0; }
+        .top-50-#{$breakpoint-name} { top: 50%; }
+        .top-100-#{$breakpoint-name} { top: 100%; }
+        .right-auto-#{$breakpoint-name} { right: auto; }
+        .right-0-#{$breakpoint-name} { right: 0; }
+        .right-50-#{$breakpoint-name} { right: 50%; }
+        .right-100-#{$breakpoint-name} { right: 100%; }
+        .bottom-auto-#{$breakpoint-name} { bottom: auto; }
+        .bottom-0-#{$breakpoint-name} { bottom: 0; }
+        .bottom-50-#{$breakpoint-name} { bottom: 50%; }
+        .bottom-100-#{$breakpoint-name} { bottom: 100%; }
+        .left-auto-#{$breakpoint-name} { left: auto; }
+        .left-0-#{$breakpoint-name} { left: 0; }
+        .left-25-#{$breakpoint-name} { left: 25%; }
+        .left-50-#{$breakpoint-name} { left: 50%; }
+        .left-75-#{$breakpoint-name} { left: 75%; }
+        .left-100-#{$breakpoint-name} { left: 100%; }
+    }
+}

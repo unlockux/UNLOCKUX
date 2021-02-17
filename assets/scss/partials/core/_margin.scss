@@ -1,0 +1,70 @@
+// Padding
+
+
+@each $i in $margin {
+    $c: $i + px;
+    $d: - + $i + px;
+    .margin-#{$i} { margin: $c; }
+    .margin-t#{$i} { margin-top: $c; }
+    .margin-r#{$i} { margin-right: $c; }
+    .margin-b#{$i} { margin-bottom: $c; }
+    .margin-l#{$i} { margin-left: $c; }
+    .margin-y#{$i} { margin-bottom: $c; margin-top: $c; }
+    .margin-x#{$i} { margin-left: $c; margin-right: $c; }
+
+    .margin-l#{$i}-negative { margin-left: $d; }
+    .margin-r#{$i}-negative { margin-right: $d; }
+    .margin-t#{$i}-negative { margin-top: $d; }
+    .margin-b#{$i}-negative { margin-bottom: $d; }
+    .margin-x#{$i}-negative { margin-left: $d; margin-right: $d; }
+    .margin-y#{$i}-negative { margin-top: $d; margin-bottom: $d; }
+    .margin-#{$i}-negative { margin: $d; }
+
+}
+
+.margin-t-gutter { margin-top: $gutter; }
+.margin-r-gutter { margin-right: $gutter; }
+.margin-b-gutter { margin-bottom: $gutter; }
+.margin-l-gutter { margin-left: $gutter; }
+
+.margin-t-gutter-full { margin-top: $gutter-full; }
+.margin-r-gutter-full { margin-right: $gutter-full; }
+.margin-b-gutter-full { margin-bottom: $gutter-full; }
+.margin-l-gutter-full { margin-left: $gutter-full; }
+
+.margin-l-auto { margin-left: auto; }
+
+.margin-x-auto { margin-left: auto; margin-right: auto; }
+.margin-y-auto { margin-top: auto; margin-bottom: auto; }
+
+@each $breakpoint-name, $breakpoint-value in $breakpoints {
+    @include media-query($breakpoint-name) {
+        @each $i in $margin {
+            $c: $i + px;
+            $d: - + $i + px;
+            .margin-#{$i}-#{$breakpoint-name} { margin: $c; }
+            .margin-t#{$i}-#{$breakpoint-name} { margin-top: $c; }
+            .margin-r#{$i}-#{$breakpoint-name} { margin-right: $c; }
+            .margin-b#{$i}-#{$breakpoint-name} { margin-bottom: $c; }
+            .margin-l#{$i}-#{$breakpoint-name} { margin-left: $c; }
+            .margin-y#{$i}-#{$breakpoint-name} { margin-bottom: $c; margin-top: $c; }
+            .margin-x#{$i}-#{$breakpoint-name} { margin-left: $c; margin-right: $c; }
+            .margin-x#{$i}-negative-#{$breakpoint-name} { margin-left: $d; margin-right: $d; }
+            .margin-y#{$i}-negative-#{$breakpoint-name} { margin-top: $d; margin-bottom: $d; }
+            .margin-#{$i}-negative-#{$breakpoint-name} { margin: $d; }
+            .margin-t#{$i}-negative-#{$breakpoint-name} { margin-top: $d; }
+        }
+        .margin-t-gutter-#{$breakpoint-name} { margin-top: $gutter; }
+        .margin-r-gutter-#{$breakpoint-name} { margin-right: $gutter; }
+        .margin-b-gutter-#{$breakpoint-name} { margin-bottom: $gutter; }
+        .margin-l-gutter-#{$breakpoint-name} { margin-left: $gutter; }
+
+        .margin-t-gutter-full-#{$breakpoint-name} { margin-top: $gutter-full; }
+        .margin-r-gutter-full-#{$breakpoint-name} { margin-right: $gutter-full; }
+        .margin-b-gutter-full-#{$breakpoint-name} { margin-bottom: $gutter-full; }
+        .margin-l-gutter-full-#{$breakpoint-name} { margin-left: $gutter-full; }
+
+        .margin-l-auto-#{$breakpoint-name} { margin-left: auto; }
+
+    }
+}

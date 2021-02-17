@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="100px" height="100px" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Random/Pleck</title>
+    <g id="Random/Pleck" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M50.5,100 C65.4745763,100 97,65.3277211 97,39.4529631 C97,13.5782052 76.1812409,0 50.5,0 C24.8187591,0 4,13.5782052 4,39.4529631 C4,65.3277211 35.5254237,100 50.5,100 Z" id="icon-plec" fill="#ED0000"></path>
+    </g>
+</svg>

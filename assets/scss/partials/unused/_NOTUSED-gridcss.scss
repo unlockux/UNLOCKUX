@@ -1,0 +1,44 @@
+// Grid CSS
+// https://css-tricks.com/snippets/css/complete-guide-grid/
+// helpful explanation https://hackernoon.com/the-ultimate-css-battle-grid-vs-flexbox-d40da0449faf
+.grid-block{
+    $c: (1 / $grid-columns * 100%);
+    display: grid;
+    grid-template-columns: repeat($grid-columns, $c);
+    & > *{
+        grid-column: span $grid-columns
+    }
+}
+.grid-inline{
+    $c: (1 / $grid-columns * 100%);
+    display: inline-grid;
+    grid-template-columns: repeat($grid-columns, $c);
+    & > *{
+        grid-column: span $grid-columns
+    }
+}
+
+
+.content-middle{ place-self: center; }
+
+
+
+
+@for $i from 1 through $grid-columns {
+    .span-col-#{$i} {
+        grid-column: span $i;
+    }
+    .span-row-#{$i} {
+        grid-row: span $i;
+    }
+}
+@include generate-breakpoint-prefixes {
+    @for $i from 1 through $grid-columns {
+        &span-col-#{$i} {
+            grid-column: span $i;
+        }
+        &span-row-#{$i} {
+            grid-row: span $i;
+        }
+    }
+}

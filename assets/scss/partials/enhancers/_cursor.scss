@@ -1,0 +1,21 @@
+// Cursor
+
+// .pointer-none,.pointer-events-none { pointer-events: none; }
+// .pointer-events-auto { pointer-events: auto; }
+// .user-select-none,.noselect { user-select: none; }
+
+.cursor-auto { cursor: auto; }
+.cursor-default { cursor: default; }
+.cursor-initial { cursor: initial; }
+.cursor-pointer,.pointer { cursor: pointer; }
+.cursor-help { cursor: help; }
+
+@each $breakpoint-name, $breakpoint-value in $breakpoints {
+    @include media-query($breakpoint-name) {
+        .cursor-auto-#{$breakpoint-name} { cursor: auto; }
+        .cursor-default-#{$breakpoint-name} { cursor: default; }
+        .cursor-initial-#{$breakpoint-name} { cursor: initial; }
+        .cursor-pointer-#{$breakpoint-name},.pointer-#{$breakpoint-name} { cursor: pointer; }
+        .cursor-help-#{$breakpoint-name} { cursor: help; }
+    }
+}

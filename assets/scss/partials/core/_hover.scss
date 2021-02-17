@@ -1,0 +1,193 @@
+// Hover
+
+.hover-text-decoration:hover{
+    text-decoration: underline;
+}
+
+// Mute
+
+.hover-mute {
+  opacity: 1;
+  transition: $transition;
+
+  &:hover,
+  &:focus {
+    opacity: .5;
+  }
+
+  &:active {
+    opacity: .8;
+  }
+}
+
+
+// Unmute
+// Hint: Combine with the 'muted' class
+
+.hover-unmute {
+  transition: $transition;
+
+  &:hover,
+  &:focus {
+    opacity: 1;
+  }
+}
+
+
+// Reveal
+
+// <div class="hover-reveal">
+//   <div class="reveal">Element revealed on hover or focus</div>
+// </div>
+
+.hover-reveal {
+
+  .reveal {
+    opacity: 0;
+    transition: $transition;
+    pointer-events: none;
+  }
+
+  &:hover,
+  &:focus {
+
+    .reveal {
+      pointer-events: auto;
+      opacity: 1;
+    }
+  }
+}
+@media (min-width: $breakpoint-lg){
+    .hover-reveal-large-up {
+
+      .reveal {
+        opacity: 0;
+        transition: $transition;
+        pointer-events: none;
+      }
+
+      &:hover,
+      &:focus {
+
+        .reveal {
+          pointer-events: auto;
+          opacity: 1;
+        }
+      }
+    }
+}
+
+
+// hover hide
+
+.hover-hide {
+
+// because .hide is already in use, need to use something else as a sibling class
+  .hide-on-hover {
+    opacity: 1;
+    transition: $transition;
+    pointer-events: none;
+  }
+
+  &:hover,
+  &:focus {
+
+    .hide-on-hover {
+      pointer-events: auto;
+      opacity: 0;
+    }
+  }
+}
+@media (min-width: $breakpoint-lg){
+    .hover-reveal-large-up {
+
+      .reveal {
+        opacity: 0;
+        transition: $transition;
+        pointer-events: none;
+      }
+
+      &:hover,
+      &:focus {
+
+        .reveal {
+          pointer-events: auto;
+          opacity: 1;
+        }
+      }
+    }
+}
+
+
+.hover-show {
+
+  .show {
+    display: none;
+    transition: $transition;
+    pointer-events: none;
+  }
+
+  &:hover,
+  &:focus {
+
+    .show {
+      pointer-events: auto;
+      display: block;
+    }
+  }
+}
+
+
+// Affect Others
+
+// <div class="hover-affect">
+//   <div class="affect">Highlights hovered element by affecting others</div>
+//   <div class="affect">Highlights hovered element by affecting others</div>
+//   <div class="affect">Highlights hovered element by affecting others</div>
+// </div>
+
+.hover-affect {
+
+  &:hover {
+
+    .affect {
+      opacity: .5;
+    }
+  }
+
+  .affect {
+    transition: $transition;
+
+    &:hover,
+    &:focus {
+      opacity: 1;
+    }
+  }
+}
+
+
+// Zoom
+
+// <div class="hover-zoom">
+//   <div class="zoom">Element zoomed in on hover or focus</div>
+// </div>
+
+.hover-zoom {
+
+  .zoom {
+    transform: scale(1, 1);
+    transition: $transition;
+  }
+
+  &:hover,
+  &:focus {
+
+    .zoom {
+      transform: scale(1.1, 1.1);
+    }
+  }
+}
+
+.hover-btn-affect:hover{
+    box-shadow: inset 0 0 0 20rem rgba($black, $opacity-1);
+}

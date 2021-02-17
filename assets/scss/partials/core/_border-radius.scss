@@ -1,0 +1,30 @@
+// Border radius
+
+.radius { border-radius: $border-radius; }
+.radius-t{ border-radius: $border-radius $border-radius 0 0; }
+.radius-r { border-radius: 0 $border-radius $border-radius 0; }
+.radius-b { border-radius: 0 0 $border-radius $border-radius; }
+.radius-l { border-radius: $border-radius 0 0 $border-radius; }
+.radius-none { border-radius: 0; }
+
+.radius-small { border-radius: 3px; }
+.radius-small-b { border-radius: 0 0 3px 3px; }
+
+.radius-medium { border-radius: 10px; }
+.radius-medium-t { border-radius: 10px 10px 0 0; }
+.radius-medium-b { border-radius: 0 0 10px 10px; }
+
+.radius-tl{ border-radius: $border-radius 0 0 0; }
+
+.circle { border-radius: 50%; }
+.pill { border-radius: 20rem; }
+
+@each $breakpoint-name, $breakpoint-value in $breakpoints {
+    @include media-query($breakpoint-name) {
+        .radius-#{$breakpoint-name} { border-radius: $border-radius; }
+        .radius-t-#{$breakpoint-name}{ border-radius: $border-radius $border-radius 0 0; }
+        .radius-r-#{$breakpoint-name} { border-radius: 0 $border-radius $border-radius 0; }
+        .radius-b-#{$breakpoint-name} { border-radius: 0 0 $border-radius $border-radius; }
+        .radius-l-#{$breakpoint-name} { border-radius: $border-radius 0 0 $border-radius; }
+    }
+}

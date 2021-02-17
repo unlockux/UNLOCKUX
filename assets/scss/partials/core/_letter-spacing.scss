@@ -1,0 +1,15 @@
+// Letter Spacing
+
+@for $i from 1 through $letter-spacing {
+    $c: $i + px;
+    .ls-#{$i},.letter-spacing-#{$i}{ letter-spacing: $c; }
+}
+
+@each $breakpoint-name, $breakpoint-value in $breakpoints {
+    @include media-query($breakpoint-name) {
+        @for $i from 1 through $letter-spacing {
+            $c: $i + px;
+            .ls#{$i}-#{$breakpoint-name},.letter-spacing-#{$i}-#{$breakpoint-name}{ letter-spacing: $c; }
+        }
+    }
+}

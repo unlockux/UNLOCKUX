@@ -1,0 +1,472 @@
+// Settings
+
+$white:         #fff !default;
+$black:         #322332 !default;
+$off-black:     #425466 !default;
+// $black-80:      #333333 !default;
+// $black-60:      #666666 !default;
+// $black-40:      #999999 !default;
+$black-20:      #cccccc !default;
+// $grey1:         #888888 !default;
+$grey2:         #DBDBDB !default;
+// $grey3:         #EFEFEF !default;
+// $grey4:         #F7F7F7 !default;
+// $grey5:         #FBFBFB !default;
+$red:           #E10A0A !default;
+// $plum:          #322332 !default;
+// $dark-purple:   #4C225F !default;
+$purple:        #8A36F1 !default;
+// $purple2:       #645096 !default;
+// $magenta:       #9B1478 !default;
+$pink:          #FF6EFF !default;
+// $light-pink:    #FDEBF4 !default;
+// $light-green:   #64A541 !default;
+$green:         #62F37B !default;
+// $light-blue:    #A5D2EB !default;
+// $cerulean:      #4196D2 !default;
+$blue:          #005DF5 !default;
+$orange:        #FF6E00 !default;
+// $alert-yellow:  #FFCC00 !default;
+$yellow:        #EFFF00 !default;
+// $menu:          #3d3045 !default;
+// $menu-hover:    #2b1f2b !default;
+
+////////////////////////////////////////////
+
+$body:          $off-black !default;
+$primary:       $red !default;
+$secondary:     $red !default;
+$grey:          $grey2 !default;
+
+$colors: (
+"white":        $white,
+"black":        $black,
+"off-black":    $off-black,
+// "black-80":     $black-80,
+// "black-60":     $black-60,
+// "black-40":     $black-40,
+"black-20":     $black-20,
+// "grey1":        $grey1,
+// "grey2":        $grey2,
+// "grey3":        $grey3,
+// "grey4":        $grey4,
+// "grey5":        $grey5,
+"red":          $red,
+// "plum":         $plum,
+// "dark-purple":  $dark-purple,
+"purple":       $purple,
+// "purple2":      $purple2,
+// "magenta":      $magenta,
+"pink":         $pink,
+// "light-pink":   $light-pink,
+// "light-green":  $light-green,
+"green":        $green,
+// "light-blue":   $light-blue,
+// "cerulean":     $cerulean,
+"blue":         $blue,
+"orange":       $orange,
+// "alert-yellow": $alert-yellow,
+"yellow":       $yellow,
+// "menu":         $menu,
+// "menu-hover":   $menu-hover,
+"body":         $off-black,
+"primary":      $red,
+"secondary":    $red,
+"grey":         $grey2,
+);
+
+
+// $greys: (
+// "off-white": #F4F4F4,
+// "grey-lightest": #dddddd,
+// "grey-light": #ECECEC,
+// "grey": #595959,
+// "grey-dark": #595959,
+// "grey-darkest": #222222,
+// "off-black": #050505,
+// );
+
+// Tints
+// You can alter the values in the variables depending on your specific needs.
+// This map is used to automatically create the utility classes for backgrounds, gradients, borders and opacity.
+
+$opacity-1: .1 !default;
+$opacity-15: .15 !default;
+$opacity-2: .2 !default;
+$opacity-3: .3 !default;
+$opacity-4: .4 !default;
+$opacity-5: .5 !default;
+$opacity-6: .6 !default;
+$opacity-7: .7 !default;
+$opacity-8: .8 !default;
+$opacity-9: .9 !default;
+$opacity-10: 1 !default;
+
+$opacities: (
+10: $opacity-1,
+15: $opacity-15,
+20: $opacity-2,
+30: $opacity-3,
+40: $opacity-4,
+50: $opacity-5,
+60: $opacity-6,
+70: $opacity-7,
+80: $opacity-8,
+90: $opacity-9,
+100: $opacity-10
+);
+
+
+// Type Scale
+//http://jxnblk.com/writing/posts/mathematical-web-typography/
+$h00: 4.5;
+$h0: 4;
+// $h1: 6.2;
+// $h2: 2.5;
+// $h3: 1.95;
+// $h4: 1.5;
+// $h5: 1.38;
+// $h6: 1.27;
+
+$h1: 60;
+$h2: 40;
+$h3: 30;
+$h4: 22;
+$h5: 20;
+$h6: 18;
+
+$font-sizes: (
+h00: $h00,
+h0: $h0,
+h1: $h1,
+h2: $h2,
+h3: $h3,
+h4: $h4,
+h5: $h5,
+h6: $h6,
+);
+
+$font-sizes-VM: (
+h1: $h1,
+h2: $h2,
+h3: $h3,
+);
+
+$line-heights-VM: (
+h1: 55,
+h2: 45,
+h3: 35,
+h4: 27,
+h5: 25,
+h6: 23,
+);
+
+
+
+// Typefaces
+//http://mrmrs.io/writing/2016/03/17/webfonts/
+$narrow-font-family: 'Open-Sans','arial', sans-serif;
+$sans-font-family: 'Inter','Open Sans','arial', sans-serif;
+$serif-font-family: Georgia, Times, 'Times New Roman', serif !default;
+$monospace-font-family: 'Source Code Pro', Consolas, monospace !default;
+
+
+// @font-face {
+//     font-family: 'VMWhisper';
+//     // src: url('../iconfont/iconFont.eot');
+//     src:
+//     // url('../iconfont/iconFont.eot?#iefix') format('eot'),
+//     // url('../iconfont/iconFont.woff2') format('woff2'),
+//     // url('../iconfont/iconFont.woff') format('woff'),
+//     url('../fonts/VMCircularWhisperTT-Light.ttf') format('truetype'),
+//     // url('../iconfont/iconFont.svg#iconFont') format('svg');
+// }
+// @font-face {
+//     font-family: 'VMChat';
+//     // src: url('../iconfont/iconFont.eot');
+//     src:
+//     // url('../iconfont/iconFont.eot?#iefix') format('eot'),
+//     // url('../iconfont/iconFont.woff2') format('woff2'),
+//     // url('../iconfont/iconFont.woff') format('woff'),
+//     url('../fonts/VMCircularChatTT-Book.ttf') format('truetype'),
+//     url('../iconfont/iconFont.svg#iconFont') format('svg');
+// }
+
+/////////////////////////////////////////////
+/////////////////////////////////////////////
+// Defaults
+/////////////////////////////////////////////
+/////////////////////////////////////////////
+
+// Generic
+$line-height: 26px !default;
+$bold-font-weight: 700 !default;
+$small-font-size: 80% !default;
+$letter-spacing: 9 !default;
+
+$gutter: 0.6rem !default;
+$gutter-full: 1.2rem !default;
+
+$margin:
+0
+, 1
+, 2
+, 3
+, 4
+, 5
+, 6
+, 7
+, 8
+, 9
+, 10
+, 15
+, 20
+, 25
+, 30
+, 40
+, 50
+, 60
+, 70
+, 80
+, 90
+, 100
+, 120
+, 130
+, 140
+, 150
+, 160
+, 170
+, 180
+, 190
+, 200
+, 250
+, 300
+;
+$padding:
+0
+, 1
+, 2
+, 3
+, 4
+, 5
+, 6
+, 7
+, 8
+, 9
+, 10
+, 15
+, 20
+, 25
+, 30
+, 40
+, 50
+, 60
+, 70
+, 80
+, 90
+, 100
+, 120
+, 130
+, 140
+;
+
+$font-size-min: 14 !default;
+$font-size-max: 50 !default;
+$fonts:
+10
+, 12
+, 14
+, 15
+, 16
+, 17
+, 18
+, 19
+, 20
+, 21
+, 22
+, 23
+, 24
+, 25
+, 26
+, 27
+, 28
+, 29
+, 30
+, 35
+, 40
+, 45
+, 50
+, 55
+, 60
+, 70
+, 80
+, 100
+;
+
+// Body
+$body-font-family: $sans-font-family !default;
+$body-font-size: 21px !default;
+$body-color: $body !default;
+
+
+// Headings
+$heading-font-family: $sans-font-family !default;
+// $heading-font-weight: $bold-font-weight !default;
+$heading-line-height: normal !default;
+$heading-margin-top: 0 !default;
+$heading-margin-bottom: .75em !default;
+
+
+// Links
+$link-color: $body !default;
+$link-hover-color: $primary !default;
+
+
+// Preformatted
+$pre-font-size: 16px !default;
+$pre-margin-top: 0 !default;
+$pre-margin-bottom: 1rem !default;
+$pre-tab-size: 2 !default;
+
+
+// Forms
+$field-font-family: inherit !default;
+$field-font-size: 14px !default;
+$field-big-font-size: $h3 !default;
+$field-line-height: normal !default;
+$field-focus-color: rgba($black, $opacity-3) !default;
+
+// By tweaking the top and bottom padding values, you can make sure the font is vertically centered correctly.
+$field-padding-x: 0.75rem !default;
+$field-padding-top: 0.5rem !default;
+$field-padding-bottom: 0.5rem !default;
+
+$field-small-padding-x: .8rem !default;
+$field-small-padding-top: .8rem !default;
+$field-small-padding-bottom: .8rem !default;
+
+$field-big-padding-x: 1.5rem !default;
+$field-big-padding-top: 1.5rem !default;
+$field-big-padding-bottom: 1.5rem !default;
+
+
+// Buttons
+$button-font-family: inherit !default;
+$button-font-size: 1rem !default;
+$button-small-font-size: 0.75rem !default;
+$button-big-font-size: 1.2rem !default;
+$button-font-weight: 700 !default;
+$button-line-height: normal !default;
+
+
+// For variations
+$button-background-color: $primary!default;
+$button-color: $white!default;
+
+
+// By tweaking the top and bottom padding values, you can make sure the font is vertically centered correctly.
+$button-padding-x: 1.5rem !default;
+$button-padding-top: 0.8rem !default;
+$button-padding-bottom: 0.8rem !default;
+
+// Tables
+$table-header-font-weight: $bold-font-weight !default;
+$table-line-height: 1.25 !default;
+$table-padding-x: .5rem !default;
+$table-padding-top: .5rem !default;
+$table-padding-bottom: .5rem !default;
+
+
+// Borders
+$border-width: 1px !default;
+$border-radius: 25rem !default;
+$border-styles: dotted, dashed !default;
+$border-width-loop: 8 !default;
+
+
+// Shadows
+$shadow-x: 0 !default;
+$shadow-y: 0 !default;
+$shadow-blur: .5rem !default;
+$shadow-spread: 0 !default;
+$shadow-color: rgba($black, $opacity-2) !default;
+
+$shadow-bottom-x: 0 !default;
+$shadow-bottom-y: .25rem !default;
+$shadow-bottom-blur: .4rem;
+$shadow-bottom-spread: -.05rem;
+$shadow-bottom-color: rgba($black, $opacity-1) !default;
+
+$shadow-inset-x: 0 !default;
+$shadow-inset-y: 0 !default;
+$shadow-inset-blur: .5rem !default;
+$shadow-inset-spread: 0 !default;
+$shadow-inset-color: rgba($black, $opacity-3) !default;
+
+
+// Debug
+$debug: false !default;
+
+
+// Flexbox
+$flex-loop: 3 !default;
+
+
+// z-index
+$z-index-loop: 5 !default;
+
+
+// Letter spacing
+$letter-spacing-loop: 4 !default;
+
+
+// Transition
+// This is the default value for transitions, to help with consistency.
+$transition: all .3s cubic-bezier(.645, .045, .355, 1) !default;
+
+
+// Grid
+// You can add to or change the breakpoints variables, but remember to add to the sass map below.
+// This map is used to automatically create all the responsive classes.
+
+// $container-width: 73.15rem !default;
+$container-width: 1170px !default;
+$container-width-lrg: 2000px !default;
+$grid-columns: 12 !default;
+
+$breakpoint-sm: 32rem !default;
+$breakpoint-md: 40rem !default;
+$breakpoint-lg: 64rem !default;
+$breakpoint-xl: 90rem !default;
+$breakpoint-xxl: 120rem !default;
+
+$breakpoint-sm: 768px !default;
+$breakpoint-md: 992px !default;
+$breakpoint-lg: 1199px !default;
+$breakpoint-xl: 1400px !default;
+$breakpoint-xxl: 120rem !default;
+
+$breakpoints: (
+small-up: $breakpoint-sm,
+medium-up: $breakpoint-md,
+large-up: $breakpoint-lg,
+xlarge-up: $breakpoint-xl,
+//xxlarge-up: $breakpoint-xxl,
+);
+
+// Foundation grid names
+$grid-layout: (
+small: 0,
+tablet: $breakpoint-sm,
+tablet-lrg: $breakpoint-md,
+medium: $breakpoint-md,
+large: $breakpoint-lg,
+xlarge: $breakpoint-xl,
+);
+
+
+// Includes
+$includes: (
+    grey-colours: true, // adds the '7 magic greys'
+    breakpoint-colours: false, // text colours and background colours, not border colours
+);

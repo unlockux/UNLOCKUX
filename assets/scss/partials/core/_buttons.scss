@@ -1,0 +1,115 @@
+// Buttons
+
+
+// .button{
+//     font-size:20px;
+//     background: $white;
+//     color: $blue;
+//     font-weight: 600;
+//     font-family: $sans-font-family;
+//     appearance: none;
+//     border: 1px solid rgb(221, 220, 241);
+//     border-radius: 5px;
+//     max-width: 100%;
+//     display: inline-block;
+//     text-align: center;
+//     text-decoration: none;
+//     align-items: center;
+//     box-shadow: -4px -4px 12px 0 #fff, 4px 4px 12px 0 rgba(0,0,0,.10);
+// }
+// .button{
+//     &-small{ @extend .button; padding: 10px 24px; }
+//     &-medium{ @extend .button; padding: 14px 28px; }
+//     &-large{ @extend .button; padding: 16px 32px; }
+//     &-blue{ background: $blue; color: $white; }
+// }
+
+
+//
+//input[type="submit"]
+button,.button,input[type="button"],input[type="reset"]{
+    appearance: none;
+    border:none;
+    padding:inherit;
+    font-size: $button-font-size;
+}
+.button,input[type="button"],input[type="reset"]{
+  appearance: none;
+  border: $border-width solid transparent;
+  border-radius: $border-radius;
+  color: inherit;
+  display: inline-block;
+  padding: $button-padding-top $button-padding-x $button-padding-bottom;
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 1;
+  padding: 10.5px 30px;
+  text-decoration: none;
+  align-items: center;
+  text-align: center;
+
+  @media ( min-width: 0 ) and ( max-width: $breakpoint-sm ){
+      padding: 15px 20px;
+  }
+
+  &:focus, &:hover {
+    //outline: 0;
+    transition: $transition;
+  }
+
+  // &:hover,
+  // &:focus {
+  //   box-shadow: inset 0 0 0 20rem rgba($black, $opacity-1);
+  //   //border-color: rgba($black, $opacity-1);
+  //   //box-shadow: 0 0.25rem 0 $shadow-spread rgba($black, $opacity-1);
+  // }
+  //
+  // &:active {
+  //   box-shadow: inset 0 0 0 20rem rgba($black, $opacity-2);
+  //   border-color: rgba($black, $opacity-2);
+  // }
+
+  &:disabled {
+    opacity: .5;
+  }
+  &.small{
+      font-size: $button-small-font-size;
+  }
+
+  &.primary{
+      background-color: #5F2878;
+      width:280px;
+      line-height: 2;
+      color: white;
+      &:hover{
+          background-color: #3B164C;
+      }
+      @media ( max-width: $breakpoint-sm ){
+          display: block;
+      }
+  }
+}
+
+
+// Variations
+
+
+// Variations
+//
+// .button-primary {
+//     background-color: $primary;
+//     color: $button-color;
+//
+//     &:hover {
+//         color: $button-color;
+//     }
+// }
+//
+// .button-secondary {
+//     background-color: $secondary;
+//     color: $button-color;
+//
+//     &:hover {
+//         color: $button-color;
+//     }
+// }

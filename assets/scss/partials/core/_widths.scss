@@ -1,0 +1,31 @@
+// Widths
+
+.width-0 { width: 0; }
+.width-auto { width: auto; }
+.width-inherit { width: inherit; }
+.width-1em { width: 1em; }
+.width-100 { width: 100%; }
+.min-width-100 { min-width: 100%; }
+.min-width-1em { min-width: 1em; }
+.max-width-100 { max-width: 100%; }
+.max-width-0 { max-width: 0; }
+
+@each $breakpoint-name, $breakpoint-value in $breakpoints {
+    @include media-query($breakpoint-name) {
+        .width-0-#{$breakpoint-name} { width: 0; }
+        .width-auto-#{$breakpoint-name} { width: auto; }
+        .width-inherit-#{$breakpoint-name} { width: inherit; }
+        .width-1em-#{$breakpoint-name} { width: 1em; }
+        .width-100-#{$breakpoint-name} { width: 100%; }
+        .min-width-100-#{$breakpoint-name} { min-width: 100%; }
+        .min-width-1em-#{$breakpoint-name} { min-width: 1em; }
+        .max-width-100-#{$breakpoint-name} { max-width: 100%; }
+        .max-width-0-#{$breakpoint-name} { max-width: 0; }
+    }
+}
+
+@each $breakpoint-name, $breakpoint-value in $breakpoints {
+    @include media-query($breakpoint-name) {
+        .mw-800-#{$breakpoint-name}{ max-width: 50rem; }
+    }
+}

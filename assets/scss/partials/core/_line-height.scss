@@ -1,0 +1,30 @@
+// Line Height
+
+// @each $i in $line-height {
+//     $c: $i + px;
+//     .line-height-#{$i} { line-height: $c; }
+// }
+// @each $breakpoint-name, $breakpoint-value in $breakpoints {
+//     @include media-query($breakpoint-name) {
+//         @each $i in $line-height {
+//             $c: $i + px;
+//             .line-height-#{$i}-#{$breakpoint-name} { line-height: $c; }
+//         }
+//     }
+// }
+
+.lh1 { line-height: 1; }
+.lh2 { line-height: 1.25; }
+.lh3 { line-height: 1.5; }
+.lh4 { line-height: 1.75; }
+.lh5 { line-height: 2; }
+
+@each $breakpoint-name, $breakpoint-value in $breakpoints {
+    @include media-query($breakpoint-name) {
+        &lh1-#{$breakpoint-name} { line-height: 1; }
+        &lh2-#{$breakpoint-name} { line-height: 1.25; }
+        &lh3-#{$breakpoint-name} { line-height: 1.5; }
+        &lh4-#{$breakpoint-name} { line-height: 1.75; }
+        &lh5-#{$breakpoint-name} { line-height: 2; }
+    }
+}

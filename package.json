@@ -1,0 +1,32 @@
+{
+  "name": "framework",
+  "version": "1.0.0",
+  "description": "jasons framework for general web use",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "jason christie",
+  "license": "ISC",
+  "dependencies": {
+    "async": "^2.6.3",
+    "autoprefixer": "^9.8.6",
+    "cssnano": "^4.1.8",
+    "gulp-concat": "^2.6.1",
+    "gulp-iconfont": "^10.0.3",
+    "gulp-iconfont-css": "^3.0.0",
+    "gulp-imagemin": "^5.0.3",
+    "gulp-order": "^1.2.0",
+    "gulp-plumber": "^1.2.1",
+    "gulp-postcss": "^8.0.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^4.1.0",
+    "gulp-sourcemaps": "^2.4.0",
+    "gulp-uglify": "^3.0.0",
+    "require-dir": "^1.2.0",
+    "run-sequence": "^2.2.1"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  }
+}

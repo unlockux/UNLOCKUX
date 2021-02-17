@@ -1,0 +1,21 @@
+// Vertical Align
+
+.vertical-top { vertical-align: top; }
+.vertical-middle { vertical-align: middle; }
+.vertical-baseline { vertical-align: baseline; }
+.vertical-bottom { vertical-align: bottom; }
+.vertical-text-bottom { vertical-align: text-bottom; }
+.vertical-text-top { vertical-align: text-top; }
+
+@each $breakpoint-name, $breakpoint-value in $breakpoints {
+    @include media-query($breakpoint-name) {
+
+        .vertical-top-#{$breakpoint-name} { vertical-align: top; }
+        .vertical-middle-#{$breakpoint-name} { vertical-align: middle; }
+        .vertical-baseline-#{$breakpoint-name} { vertical-align: baseline; }
+        .vertical-bottom-#{$breakpoint-name} { vertical-align: bottom; }
+        .vertical-text-bottom-#{$breakpoint-name} { vertical-align: text-bottom; }
+        .vertical-text-top-#{$breakpoint-name} { vertical-align: text-top; }
+
+    }
+}

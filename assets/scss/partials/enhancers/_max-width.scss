@@ -1,0 +1,15 @@
+// Custom Max Widths
+
+
+$max-widths: (
+500: 31rem,
+600: 37rem,
+700: 43rem,
+800: 50rem,
+900: 56rem,
+);
+
+
+@each $max-width-name, $max-width-value in $max-widths {
+    .max-width-#{$max-width-name}{ max-width: #{$max-width-value}; }
+}

@@ -1,0 +1,149 @@
+// Borders
+
+
+.border {
+    border-style: solid;
+    border-width: $border-width;
+}
+
+.border-none { border: 0; }
+.border-t-none { border-top: 0; }
+.border-r-none { border-right: 0; }
+.border-b-none { border-bottom: 0; }
+.border-l-none { border-left: 0; }
+
+
+// Sides
+
+$border-sides: (
+t: $border-width 0 0 0,
+r: 0 $border-width 0 0,
+b: 0 0 $border-width 0,
+l: 0 0 0 $border-width
+);
+
+@each $side-name, $side-val in $border-sides {
+    .border-#{$side-name} { border-style: solid; border-width: $side-val; }
+}
+
+.border-t { border-top-style: solid; border-top-width: $border-width; }
+.border-r { border-right-style: solid; border-right-width: $border-width; }
+.border-b { border-bottom-style: solid; border-bottom-width: $border-width; }
+.border-l { border-left-style: solid; border-left-width: $border-width; }
+
+.border-x { border-left-style: solid; border-left-width: $border-width; border-right-style: solid; border-right-width: $border-width; }
+.border-y { border-top-style: solid; border-top-width: $border-width; border-bottom-style: solid; border-bottom-width: $border-width; }
+
+@each $breakpoint-name, $breakpoint-value in $breakpoints {
+    @include media-query($breakpoint-name) {
+        .border-t-#{$breakpoint-name} { border-top-style: solid; border-top-width: $border-width; }
+        .border-r-#{$breakpoint-name} { border-right-style: solid; border-right-width: $border-width; }
+        .border-b-#{$breakpoint-name} { border-bottom-style: solid; border-bottom-width: $border-width; }
+        .border-l-#{$breakpoint-name} { border-left-style: solid; border-left-width: $border-width; }
+
+        // .border-x { border-left-style: solid; border-left-width: $border-width; border-right-style: solid; border-right-width: $border-width; }
+        // .border-y { border-top-style: solid; border-top-width: $border-width; border-bottom-style: solid; border-bottom-width: $border-width; }
+    }
+}
+
+// Styles
+@each $style in $border-styles {
+    .border-#{$style} { border-style: #{$style}; }
+}
+
+
+// Advanced Styles
+// adds 4x(loops = 5) = 20 additional classes
+@for $i from 1 through $border-width-loop {
+    .border-#{$i} { border-style: solid; border-width: $border-width * $i; }
+    .border-t#{$i} { border-top-style: solid; border-top-width: $border-width * $i; }
+    .border-l#{$i} { border-left-style: solid; border-left-width: $border-width * $i; }
+    .border-b#{$i} { border-bottom-style: solid; border-bottom-width: $border-width * $i; }
+    .border-r#{$i} { border-right-style: solid; border-right-width: $border-width * $i; }
+
+    .border-x#{$i} { border-left-style: solid; border-left-width: $border-width * $i;; border-right-style: solid; border-right-width: $border-width * $i;; }
+    .border-y#{$i} { border-top-style: solid; border-top-width: $border-width * $i;; border-bottom-style: solid; border-bottom-width: $border-width * $i;; }
+}
+
+// // adds 4x5x3 = 60 additional classes
+@each $breakpoint-name, $breakpoint-value in $breakpoints {
+    @include media-query($breakpoint-name) {
+        @for $i from 1 through $border-width-loop {
+            .border-t#{$i}-#{$breakpoint-name} { border-top-style: solid; border-top-width: $border-width * $i; }
+            .border-l#{$i}-#{$breakpoint-name} { border-left-style: solid; border-left-width: $border-width * $i; }
+            .border-b#{$i}-#{$breakpoint-name} { border-bottom-style: solid; border-bottom-width: $border-width * $i; }
+            .border-r#{$i}-#{$breakpoint-name} { border-right-style: solid; border-right-width: $border-width * $i; }
+        }
+    }
+}
+
+
+// Width
+
+@for $i from 1 through $border-width-loop {
+    .border-#{$i} {
+        border-width: $border-width * $i;
+    }
+}
+
+
+// Colour
+@each $color-name, $color-hex in $colors {
+    .border-#{$color-name} {
+        border-color: $color-hex;
+    }
+    .hover-border-#{$color-name}:hover {
+        border-color: $color-hex;
+    }
+}
+
+
+// @if map-get($includes, grey-colours) {
+// // Greys
+//     @each $grey-name, $grey-hex in $greys {
+//         .border-#{$grey-name} {
+//             border-color: $grey-hex;
+//         }
+//         .hover-border-#{$grey-name}:hover {
+//             border-color: $grey-hex;
+//         }
+//     }
+// }
+
+
+// Tints
+
+@each $opacity-num, $opacity-val in $opacities {
+    .border-darken-#{$opacity-num} {
+        border-color: rgba(0, 0, 0, $opacity-val);
+    }
+    .border-lighten-#{$opacity-num} {
+        border-color: rgba(255, 255, 255, $opacity-val);
+    }
+}
+
+
+// Transparent
+
+.border-transparent {
+    border-color: transparent;
+}
+
+
+@each $breakpoint-name, $breakpoint-value in $breakpoints {
+    @include media-query($breakpoint-name) {
+        .border-#{$breakpoint-name} { border-style: solid; border-width: $border-width; }
+        .border-none-#{$breakpoint-name} { border: 0; }
+        .border-t-none-#{$breakpoint-name} { border-top: 0; }
+        .border-r-none-#{$breakpoint-name} { border-right: 0; }
+        .border-b-none-#{$breakpoint-name} { border-bottom: 0; }
+        .border-l-none-#{$breakpoint-name} { border-left: 0; }
+        @each $side-name, $side-val in $border-sides {
+            .border-#{$side-name}-#{$breakpoint-name} { border-style: solid; border-width: $side-val; }
+        }
+    }
+}
+
+
+.border-r-dotted { border-right-style: dotted; }
+.border-r-dashed { border-right-style: dashed; }

@@ -1,0 +1,50 @@
+// Padding
+
+@each $i in $padding {
+    $c: $i + px;
+    .padding-#{$i} { padding: $c; }
+}
+@each $i in $padding {
+    $c: $i + px;
+    .padding-t#{$i} { padding-top: $c; }
+    .padding-r#{$i} { padding-right: $c; }
+    .padding-b#{$i} { padding-bottom: $c; }
+    .padding-l#{$i} { padding-left: $c; }
+    .padding-y#{$i} { padding-bottom: $c; padding-top: $c; }
+    .padding-x#{$i} { padding-left: $c; padding-right: $c; }
+}
+
+.padding-t-gutter { padding-top: $gutter; }
+.padding-r-gutter { padding-right: $gutter; }
+.padding-b-gutter { padding-bottom: $gutter; }
+.padding-l-gutter { padding-left: $gutter; }
+
+.padding-gutter-full { padding: $gutter-full; }
+.padding-t-gutter-full { padding-top: $gutter-full; }
+.padding-r-gutter-full { padding-right: $gutter-full; }
+.padding-b-gutter-full { padding-bottom: $gutter-full; }
+.padding-l-gutter-full { padding-left: $gutter-full; }
+
+.padding-x-gutter{ padding-left: $gutter; padding-right: $gutter;}
+
+@each $breakpoint-name, $breakpoint-value in $breakpoints {
+    @include media-query($breakpoint-name) {
+        @each $i in $padding {
+            $c: $i + px;
+            .padding-#{$i}-#{$breakpoint-name} { padding: $c; }
+        }
+    }
+}
+@each $breakpoint-name, $breakpoint-value in $breakpoints {
+    @include media-query($breakpoint-name) {
+        @each $i in $padding {
+            $c: $i + px;
+            .padding-t#{$i}-#{$breakpoint-name} { padding-top: $c; }
+            .padding-r#{$i}-#{$breakpoint-name} { padding-right: $c; }
+            .padding-b#{$i}-#{$breakpoint-name} { padding-bottom: $c; }
+            .padding-l#{$i}-#{$breakpoint-name} { padding-left: $c; }
+            .padding-y#{$i}-#{$breakpoint-name}{ padding-bottom: $c; padding-top: $c; }
+            .padding-x#{$i}-#{$breakpoint-name} { padding-left: $c; padding-right: $c; }
+        }
+    }
+}

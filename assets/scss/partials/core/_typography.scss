@@ -1,0 +1,114 @@
+// Typography
+
+// Family
+
+.narrow { font-family: $narrow-font-family; }
+.sans { font-family: $sans-font-family; }
+.serif { font-family: $serif-font-family; }
+.mono { font-family: $monospace-font-family; }
+.heading { font-family: $heading-font-family; }
+
+// // Transform
+
+.normal { font-style: normal; }
+.italic { font-style: italic; }
+.capitalize, .titlecase { text-transform: capitalize; }
+.uppercase { text-transform: uppercase; }
+.lowercase { text-transform: lowercase; }
+.underline,.hover-underline:hover { text-decoration: underline; }
+.line-through { text-decoration: line-through; }
+.text-decoration-none { text-decoration: none; }
+
+
+// // Wrap
+
+.nowrap { white-space: nowrap; }
+.wrap{ white-space: wrap; }
+.break-word { word-wrap: break-word; }
+
+.truncate, .elipsis{
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+
+// Font Size
+
+@each $i in $fonts {
+    $c: $i + px;
+    $b: $i + 100;
+    $d: rem-calc($i);
+    .font-size-#{$i} { font-size: $c; }
+    // font-size: $d;
+}
+
+
+// // Font Weight
+//
+// $font-weight: 9 !default;
+// @for $i from 1 through $font-weight {
+//     .font-weight-#{$i}00{ font-weight: ($i * 100); }
+// }
+//
+// @each $breakpoint-name, $breakpoint-value in $breakpoints {
+//     @include media-query($breakpoint-name) {
+//         @for $i from 1 through $font-weight {
+//             $c: $i + px;
+//             .font-weight-#{$i}00-#{$breakpoint-name} { font-weight: ($i * 100); }
+//         }
+//     }
+// }
+//
+//
+// // Alignment
+.text-left { text-align: left; }
+.text-center,.aligncenter { text-align: center; }
+.text-right { text-align: right; }
+.text-justify { text-align: justify; }
+
+@each $breakpoint-name, $breakpoint-value in $breakpoints {
+    @include media-query($breakpoint-name) {
+        .text-left-#{$breakpoint-name} { text-align: left; }
+        .text-center-#{$breakpoint-name} { text-align: center; }
+        .text-right-#{$breakpoint-name} { text-align: right; }
+        .text-justify-#{$breakpoint-name} { text-align: justify; }
+    }
+}
+//
+//
+// // List
+//
+// .list-style-none { list-style: none; }
+// .list-reset {
+//   list-style: none;
+//   padding-left: 0;
+// }
+//
+// // cutout wont work on IE, but works on edge
+//
+// .cutout{
+//     -webkit-background-clip: text;
+//     -webkit-text-fill-color: transparent;
+// }
+//
+//
+//
+//
+//
+// Simple numeric loop
+// $font-range: 5 !default;
+// @for $i from 1 through $font-range {
+//     $c: $i + px;
+//     .font-size-#{$i}{ font-size: $c; }
+// }
+//
+// @each $breakpoint-name, $breakpoint-value in $breakpoints {
+//     @include media-query($breakpoint-name) {
+//         @for $i from 1 through $font-range {
+//             $c: $i + px;
+//             .font-size-#{$i}-#{$breakpoint-name} { font-size: $c; }
+//         }
+//     }
+// }

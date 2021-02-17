@@ -1,0 +1,123 @@
+// Type
+
+// Fluid Typography
+// https://www.madebymike.com.au/writing/fluid-type-calc-examples/
+html {
+  font-size: $body-font-size;
+}
+// @media screen and (min-width: 20rem) {
+//   html {
+//     font-size: calc(14px + 4 * ((100vw - 320px) / 960));
+//   }
+// }
+
+
+body {
+    color: $body-color;
+    //font-family: $body-font-family;
+    font-family: 'Sf pro text',sans-serif;
+    font-size: $body-font-size;
+    // line-height: $line-height;
+    line-height: 32px;
+    font-weight: 400;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+}
+
+h1,h2,h3 {
+    color: $black;
+    font-family: $sans-font-family;
+    font-weight: 800;
+    margin: 10px 0;
+    letter-spacing: -0.5px;
+}
+h4,h5,h6 {
+    font-family: $sans-font-family;
+    font-weight: 500;
+    margin: 10px 0;
+}
+
+
+// heading sizes H00 to H6
+@each $font-name, $font-value in $font-sizes {
+    #{$font-name},.#{$font-name} { font-size: $font-value + px }
+}
+// 70% of the size
+@media ( min-width: 0 ) and ( max-width: $breakpoint-md ){
+    @each $font-name, $font-value in $font-sizes-VM {
+        #{$font-name},.#{$font-name} { font-size: ($font-value / 100) * 70 + px }
+    }
+}
+// 85% of the size
+@media ( min-width: $breakpoint-md ) and ( max-width: $breakpoint-lg ){
+    @each $font-name, $font-value in $font-sizes-VM {
+        #{$font-name},.#{$font-name} { font-size: ($font-value / 100) * 80 + px }
+    }
+}
+
+
+
+
+@each $line-height, $line-value in $line-heights-VM{
+    #{$line-height},.#{$line-height} { line-height: $line-value + px }
+}
+// 70% of the size
+@media ( min-width: 0 ) and ( max-width: $breakpoint-md ){
+    @each $line-height, $line-value in $line-heights-VM {
+        #{$line-height},.#{$line-height} { line-height: ($line-value / 100) * 90 + px }
+    }
+}
+// 85% of the size
+@media ( min-width: $breakpoint-md ) and ( max-width: $breakpoint-lg ){
+    @each $line-height, $line-value in $line-heights-VM{
+        #{$line-height},.#{$line-height} { line-height: ($line-value / 100) * 90 + px }
+    }
+}
+
+
+
+
+blockquote,dl,ol,p,pre,ul {
+    margin-top: 0;
+    margin-bottom: 1em;
+}
+
+pre,code,samp {
+    font-family: $monospace-font-family;
+    font-size: $pre-font-size;
+    tab-size: $pre-tab-size;
+}
+
+pre {
+    margin-bottom: $pre-margin-bottom;
+    margin-top: $pre-margin-top;
+    overflow-x: auto;
+}
+
+small,.small {
+    font-size: $small-font-size;
+}
+
+a {
+    transition: all $transition;
+    text-decoration: none;
+}
+
+details, summary{
+    outline: none;
+    summary{
+        cursor: pointer;
+    }
+}
+
+
+
+// Heading sizes based on the breakpoints
+// @each $breakpoint-name, $breakpoint-value in $breakpoints {
+//     @include media-query($breakpoint-name) {
+//         @each $font-name, $font-value in $font-sizes {
+//             .#{$font-name}-#{$breakpoint-name} { font-size: $font-value + rem }
+//         }
+//     }
+// }

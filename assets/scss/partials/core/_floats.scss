@@ -1,0 +1,13 @@
+// Floats
+
+.float-left, .left { float: left; }
+.float-right, .right { float: right; }
+.float-none { float: none; }
+
+@each $breakpoint-name, $breakpoint-value in $breakpoints {
+    @include media-query($breakpoint-name) {
+        .left#{$breakpoint-name} { float: left; }
+        .right#{$breakpoint-name} { float: right; }
+        .float-none#{$breakpoint-name} { float: none; }
+    }
+}

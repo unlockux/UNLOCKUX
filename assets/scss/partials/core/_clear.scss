@@ -1,0 +1,22 @@
+// Clear
+
+.clearfix::before,
+.clearfix::after {
+  content: '';
+  display: table;
+}
+
+.clearfix::after { clear: both; }
+
+.clear-left { clear: left; }
+.clear-right { clear: right; }
+.clear,.clear-both { clear: both; }
+
+@each $breakpoint-name, $breakpoint-value in $breakpoints {
+    @include media-query($breakpoint-name) {
+        .clear-left-#{$breakpoint-name} { clear: left; }
+        .clear-right-#{$breakpoint-name} { clear: right; }
+        .clear-#{$breakpoint-name} { clear: both; }
+        .clear-both-#{$breakpoint-name} { clear: both; }
+    }
+}

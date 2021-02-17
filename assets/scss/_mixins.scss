@@ -1,0 +1,99 @@
+// Mixins
+
+
+// This takes a variable and removes the unit value from it.
+// It is necessary for the responsive headline code to work.
+
+@function strip-unit($number) {
+    @if type-of($number) == 'number' and not unitless($number) {
+        @return $number / ($number * 0 + 1);
+    }
+
+    @return $number;
+}
+
+
+// This makes it cleaner mark up for the gradient classes.
+
+@mixin linear-gradient($direction, $color-stops...) {
+    background: nth(nth($color-stops, 1), 1);
+    background: -webkit-linear-gradient(legacy-direction($direction), $color-stops);
+    background: linear-gradient($direction, $color-stops);
+}
+
+
+// These are concerned with creating the responsive classes from the breakpoint sass map.
+
+@mixin media-query($breakpoint) {
+
+    @if (map-get($breakpoints, $breakpoint)) == null {
+
+        @content;
+
+    } @else {
+
+        @media (min-width: #{map-get($breakpoints, $breakpoint)}) {
+
+            @content;
+
+        }
+
+    }
+
+}
+
+@mixin generate-breakpoint-prefixes {
+
+    @each $breakpoint-name, $breakpoint-value in $breakpoints {
+
+        $breakpoint-prefix: "#{$breakpoint-name}-";
+
+        @include media-query($breakpoint-name) {
+
+            .#{$breakpoint-prefix} { @content; }
+
+        }
+
+    }
+
+}
+
+
+
+@mixin list-breakpoints {
+
+    @each $breakpoint-name, $breakpoint-value in $breakpoints {
+
+        $bp: "#{$breakpoint-name}-";
+
+        .#{$bp} { @content; }
+
+    }
+
+}
+
+
+
+// font-size REM CALC
+
+$rem-base: 16;
+
+@function strip-unit($num) {
+  @return $num / ($num * 0 + 1);
+}
+
+@function convert-to-rem($value, $base-value: $rem-base)  {
+  $value: strip-unit($value) / strip-unit($base-value) * 1rem;
+  @if ($value == 0rem) { $value: 0; } // Turn 0rem into 0
+  @return $value;
+}
+
+@function rem-calc($values, $base-value: $rem-base) {
+  $max: length($values);
+  @if $max == 1 { @return convert-to-rem(nth($values, 1), $base-value); }
+  $remValues: ();
+  @for $i from 1 through $max {
+    $remValues: append($remValues, convert-to-rem(nth($values, $i), $base-value));
+  }
+  @return $remValues;
+}
