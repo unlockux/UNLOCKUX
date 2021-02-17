@@ -13,30 +13,7 @@
 </div>
 
 
-
-<div class="bg-blue || relative z1 overflow-hidden">
-    <!-- video -->
-    <div class="zn1 absolute top-0 left-0 right-0 bottom-0 overflow-hidden">
-        <video playsinline autoplay muted loop id="bgvid">
-            <source src="dist/video/video.mp4" type="video/mp4">
-        </video>
-    </div>
-
-    <!-- overlay --> 
-    <div class="zn1 absolute top-0 left-0 right-0 bottom-0 || bg-black opacity-80" data-colour></div>
-
-    <!-- flare -->
-    <div class="zn1 absolute top-0 left-0 right-0 bottom-0 || bg-cover bg-center-center" style="background-image:url(dist/image/purple-flare.svg)"></div>
-
-    <!-- content -->
-    <div class="row || height-v85 height-v90-medium-up flex items-center || text-center padding-t40">
-        <div class="text-center white">
-            <h1 class="lh1 white margin-b20 margin-b60-large-up">The wait is over - Stream the dream with Virgin Media Stream box</h1>
-            <p>It's your entertainment. You're in charge</p>
-            <a href="" class="button primary margin-x-auto">Get</a>
-        </div>
-    </div>
-</div>
+<?php include( INCLUDES_DIR . 'components/banner-video.php'); ?>
 
 <div class="row">
     <div class="medium-5 margin-x-auto text-center padding-t25">
@@ -45,6 +22,10 @@
         <a class="button bg-purple white cursor-pointer" data-button="purple">Purple</a>
     </div>
 </div>
+
+<?php include( INCLUDES_DIR . 'components/banner-device.php'); ?>
+
+
 
 <div class="row padding-y70">
     <div class="large-8 margin-x-auto">
