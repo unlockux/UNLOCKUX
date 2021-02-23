@@ -77,15 +77,48 @@ button,.button,input[type="button"],input[type="reset"]{
   }
 
   &.primary{
+      background-color: $purple;
+      width:280px;
+      line-height: 2;
+      color: white;
+      // &:hover{
+      //     background-color: $purple;
+      // }
+      @media ( max-width: $breakpoint-sm ){
+          display: block;
+      }
+  }
+  &.secondary{
+      background-color: $peach;
+      width:280px;
+      line-height: 2;
+      color: $purple;
+      // &:hover{
+      //     background-color: $darkpeach;
+      // }
+      @media ( max-width: $breakpoint-sm ){
+          display: block;
+      }
+  }
+  &.tertiary{
+      background-color: $coral;
+      width:280px;
+      line-height: 2;
+      color: $purple;
+      // &:hover{
+      //     background-color: $violet;
+      // }
+      @media ( max-width: $breakpoint-sm ){
+          display: block;
+      }
+  }
+  .vmprimary{
       background-color: #5F2878;
       width:280px;
       line-height: 2;
       color: white;
       &:hover{
           background-color: #3B164C;
-      }
-      @media ( max-width: $breakpoint-sm ){
-          display: block;
       }
   }
 }
