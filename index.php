@@ -15,6 +15,7 @@ $bodyColor = 'bg-trueblack';
         </div>
             <a href="/stream.php" class="button primary margin-10">Stream</a>
             <a href="/cooper.php" class="button secondary margin-10">Cooper</a>
+            <a href="/accessibility.php" class="button primary margin-10">Accessibility</a>
     </div>
 
 </div>

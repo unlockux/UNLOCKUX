@@ -4,7 +4,7 @@
 
 <!-- header -->
 <div class="z2 absolute top-0 left-0 right-0 padding-20 || flex justify-between">
-    <span class="fas fa-bars white"></span>
+    <a href="/" class="white fas fa-home white"></a>
     <div class="">
         <span class="fas fa-search white padding-r20"></span>
         <span class="fas fa-user white padding-r20"></span>
@@ -26,12 +26,6 @@
 <?php include( INCLUDES_DIR . 'components/banner-device.php'); ?>
 
 
-
-<div class="row padding-y70">
-    <div class="large-8 margin-x-auto">
-        <p>I'm baby fingerstache polaroid try-hard before they sold out listicle locavore marfa literally squid tattooed. Wayfarers try-hard mumblecore twee PBR&B sustainable williamsburg brunch everyday carry. Man bun PBR&B gochujang ugh unicorn, taiyaki lo-fi. Ethical skateboard try-hard brunch thundercats gluten-free pok pok. Ramps live-edge pour-over health goth woke butcher. Banjo snackwave hoodie ethical cray. Lyft pour-over shaman tacos cronut, 90's hoodie dreamcatcher adaptogen tattooed brooklyn pabst man braid palo santo selvage.</p>
-    </div>
-</div>
-
+<div class="padding-y40"></div>
 
 <?php include( INCLUDES_DIR . 'footer.php'); ?>
