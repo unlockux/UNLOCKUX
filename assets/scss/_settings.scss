@@ -1,77 +1,96 @@
 // Settings
 
 $white:         #fff !default;
-$black:         #322332 !default;
-$off-black:     #425466 !default;
+$trueblack:     #000000 !default;
+$black:         #111111 !default;
+//$off-black:     #425466 !default;
 // $black-80:      #333333 !default;
 // $black-60:      #666666 !default;
 // $black-40:      #999999 !default;
-$black-20:      #cccccc !default;
+//$black-20:      #cccccc !default;
 // $grey1:         #888888 !default;
 $grey2:         #DBDBDB !default;
 // $grey3:         #EFEFEF !default;
 // $grey4:         #F7F7F7 !default;
 // $grey5:         #FBFBFB !default;
-$red:           #E10A0A !default;
-// $plum:          #322332 !default;
+$vmred:           #E10A0A !default;
+$vmplum:          #322332 !default;
+$vmpurple:        #8A36F1 !default;
+$vmpink:          #FF6EFF !default;
+$vmgreen:         #62F37B !default;
+$vmblue:          #005DF5 !default;
+$vmorange:        #FF6E00 !default;
+$vmyellow:        #EFFF00 !default;
 // $dark-purple:   #4C225F !default;
-$purple:        #8A36F1 !default;
 // $purple2:       #645096 !default;
 // $magenta:       #9B1478 !default;
-$pink:          #FF6EFF !default;
 // $light-pink:    #FDEBF4 !default;
 // $light-green:   #64A541 !default;
-$green:         #62F37B !default;
 // $light-blue:    #A5D2EB !default;
 // $cerulean:      #4196D2 !default;
-$blue:          #005DF5 !default;
-$orange:        #FF6E00 !default;
 // $alert-yellow:  #FFCC00 !default;
-$yellow:        #EFFF00 !default;
 // $menu:          #3d3045 !default;
 // $menu-hover:    #2b1f2b !default;
 
+$blue:             #4129D9 !default; // AA
+$violet:           #5321BF !default; // AA
+$purple:           #340B8C !default; // AA
+$coral:            #F27294 !default; // White no, purple AA
+$peach:            #F8927C !default; // White no, purple AA
+// $darkpeach:        #EF775C !default;
+
 ////////////////////////////////////////////
 
-$body:          $off-black !default;
-$primary:       $red !default;
-$secondary:     $red !default;
+$body:          $black !default;
+$primary:       $blue !default;
+$secondary:     $peach !default;
 $grey:          $grey2 !default;
 
 $colors: (
 "white":        $white,
+"trueblack":    $trueblack,
 "black":        $black,
-"off-black":    $off-black,
+//"off-black":    $off-black,
 // "black-80":     $black-80,
 // "black-60":     $black-60,
 // "black-40":     $black-40,
-"black-20":     $black-20,
+//"black-20":     $black-20,
 // "grey1":        $grey1,
 // "grey2":        $grey2,
 // "grey3":        $grey3,
 // "grey4":        $grey4,
 // "grey5":        $grey5,
-"red":          $red,
-// "plum":         $plum,
+"vmred":          $vmred,
+"vmplum":         $vmplum,
+"vmpurple":       $vmpurple,
+"vmpink":         $vmpink,
+"vmgreen":        $vmgreen,
+"vmblue":         $vmblue,
+"vmorange":       $vmorange,
+"vmyellow":       $vmyellow,
 // "dark-purple":  $dark-purple,
-"purple":       $purple,
 // "purple2":      $purple2,
 // "magenta":      $magenta,
-"pink":         $pink,
 // "light-pink":   $light-pink,
 // "light-green":  $light-green,
-"green":        $green,
 // "light-blue":   $light-blue,
 // "cerulean":     $cerulean,
-"blue":         $blue,
-"orange":       $orange,
 // "alert-yellow": $alert-yellow,
-"yellow":       $yellow,
 // "menu":         $menu,
 // "menu-hover":   $menu-hover,
-"body":         $off-black,
-"primary":      $red,
-"secondary":    $red,
+
+"blue":         $blue,
+"violet":       $violet,
+"purple":       $purple,
+"coral":        $coral,
+"peach":        $peach,
+// "darkpeach":    $darkpeach,
+
+////////
+
+"body":         $black,
+"primary":      $blue,
+"secondary":    $peach,
 "grey":         $grey2,
 );
 
