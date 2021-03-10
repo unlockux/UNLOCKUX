@@ -136,10 +136,10 @@ html {
 
 body {
   color: #111111;
-  font-family: 'Sf pro text',sans-serif;
+  font-family: "Inter", "Open Sans", "arial", sans-serif;
   font-size: 21px;
-  line-height: 32px;
-  font-weight: 400;
+  line-height: 26px;
+  font-weight: 500;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility; }
@@ -411,6 +411,11 @@ textarea {
   padding-bottom: calc(var(--cel,2.5vw) * 2);
   padding-left: calc(var(--cel,2.5vw) * 3);
   padding-right: calc(var(--cel,2.5vw) * 3); }
+  .row-lrg:before, .row-lrg:after {
+    content: '';
+    display: table; }
+  .row-lrg:after {
+    clear: both; }
 
 .column {
   width: 100%;
@@ -12548,6 +12553,7 @@ textarea {
             transform: translateX(-50%); } }
 
 .square,
+.ratio-85,
 .ratio-4-3,
 .ratio-3-2,
 .ratio-16-9,
@@ -12560,6 +12566,9 @@ textarea {
 
 .square {
   padding-bottom: 100%; }
+
+.ratio-85 {
+  padding-bottom: 85%; }
 
 .ratio-4-3, .min-ratio-4-3 {
   padding-bottom: 75%; }
@@ -14780,64 +14789,64 @@ img.mfp-img {
 
 /* just to randomise the height of the items */
 .grid-item1 {
-  height: 156px;
-  line-height: 156px; }
+  height: 138px;
+  line-height: 138px; }
 
 .grid-item2 {
-  height: 314px;
-  line-height: 314px; }
+  height: 188px;
+  line-height: 188px; }
 
 .grid-item3 {
-  height: 173px;
-  line-height: 173px; }
+  height: 308px;
+  line-height: 308px; }
 
 .grid-item4 {
-  height: 442px;
-  line-height: 442px; }
+  height: 333px;
+  line-height: 333px; }
 
 .grid-item5 {
-  height: 339px;
-  line-height: 339px; }
+  height: 409px;
+  line-height: 409px; }
 
 .grid-item6 {
-  height: 384px;
-  line-height: 384px; }
+  height: 299px;
+  line-height: 299px; }
 
 .grid-item7 {
+  height: 139px;
+  line-height: 139px; }
+
+.grid-item8 {
   height: 125px;
   line-height: 125px; }
 
-.grid-item8 {
-  height: 438px;
-  line-height: 438px; }
-
 .grid-item9 {
-  height: 311px;
-  line-height: 311px; }
+  height: 435px;
+  line-height: 435px; }
 
 .grid-item10 {
-  height: 197px;
-  line-height: 197px; }
+  height: 342px;
+  line-height: 342px; }
 
 .grid-item11 {
-  height: 351px;
-  line-height: 351px; }
+  height: 225px;
+  line-height: 225px; }
 
 .grid-item12 {
-  height: 213px;
-  line-height: 213px; }
+  height: 462px;
+  line-height: 462px; }
 
 .grid-item13 {
-  height: 239px;
-  line-height: 239px; }
+  height: 102px;
+  line-height: 102px; }
 
 .grid-item14 {
-  height: 475px;
-  line-height: 475px; }
+  height: 426px;
+  line-height: 426px; }
 
 .grid-item15 {
-  height: 222px;
-  line-height: 222px; }
+  height: 361px;
+  line-height: 361px; }
 
 @font-face {
   font-family: "VMCustomFont";

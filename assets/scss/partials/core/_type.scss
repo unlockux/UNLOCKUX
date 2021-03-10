@@ -14,12 +14,12 @@ html {
 
 body {
     color: $body-color;
-    //font-family: $body-font-family;
-    font-family: 'Sf pro text',sans-serif;
+    font-family: $body-font-family;
+    //font-family: 'Sf pro text',sans-serif;
     font-size: $body-font-size;
-    // line-height: $line-height;
-    line-height: 32px;
-    font-weight: 400;
+    line-height: $line-height;
+    //line-height: 32px;
+    font-weight: 500;
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
