@@ -22,16 +22,15 @@ video {
     position: absolute;
     top: 0;
     left: 0;
- 
-    //position: absolute;
-    // top: 0;
-    // left: 0;
-    // width: 100%;
-    // height: auto;
-
-    // position: absolute;
-    // left: 50%; /* % of surrounding element */
-    // top: 50%;
-    // transform: translate(-50%, -50%); /* % of current element */
-
 }
+
+
+
+$space: 16px;
+.padding-gutter{ padding: 12px }
+.padding-gutter-x{ padding: 0 12px }
+.margin-gutter-xn{ margin: 0 -12px}
+
+.padding-s{ padding: $space}
+.padding-m{ padding: $space * 2}
+.padding-l{ padding: $space * 3}

@@ -1304,6 +1304,12 @@ textarea {
 .hover-bg-black:hover {
   background-color: #111111; }
 
+.bg-grey2 {
+  background-color: #DBDBDB; }
+
+.hover-bg-grey2:hover {
+  background-color: #DBDBDB; }
+
 .bg-vmred {
   background-color: #E10A0A; }
 
@@ -1621,6 +1627,8 @@ textarea {
     background-color: #000000; }
   .bg-black-small-up {
     background-color: #111111; }
+  .bg-grey2-small-up {
+    background-color: #DBDBDB; }
   .bg-vmred-small-up {
     background-color: #E10A0A; }
   .bg-vmplum-small-up {
@@ -1700,6 +1708,8 @@ textarea {
     background-color: #000000; }
   .bg-black-medium-up {
     background-color: #111111; }
+  .bg-grey2-medium-up {
+    background-color: #DBDBDB; }
   .bg-vmred-medium-up {
     background-color: #E10A0A; }
   .bg-vmplum-medium-up {
@@ -1779,6 +1789,8 @@ textarea {
     background-color: #000000; }
   .bg-black-large-up {
     background-color: #111111; }
+  .bg-grey2-large-up {
+    background-color: #DBDBDB; }
   .bg-vmred-large-up {
     background-color: #E10A0A; }
   .bg-vmplum-large-up {
@@ -1858,6 +1870,8 @@ textarea {
     background-color: #000000; }
   .bg-black-xlarge-up {
     background-color: #111111; }
+  .bg-grey2-xlarge-up {
+    background-color: #DBDBDB; }
   .bg-vmred-xlarge-up {
     background-color: #E10A0A; }
   .bg-vmplum-xlarge-up {
@@ -2745,6 +2759,12 @@ textarea {
 .hover-border-black:hover {
   border-color: #111111; }
 
+.border-grey2 {
+  border-color: #DBDBDB; }
+
+.hover-border-grey2:hover {
+  border-color: #DBDBDB; }
+
 .border-vmred {
   border-color: #E10A0A; }
 
@@ -3185,6 +3205,9 @@ textarea {
 
 .black, .hover-color-black:hover:not(.active), .hover-black:hover:not(.active) {
   color: #111111; }
+
+.grey2, .hover-color-grey2:hover:not(.active), .hover-grey2:hover:not(.active) {
+  color: #DBDBDB; }
 
 .vmred, .hover-color-vmred:hover:not(.active), .hover-vmred:hover:not(.active) {
   color: #E10A0A; }
@@ -12981,6 +13004,12 @@ textarea {
 .banner-bottom-gradient-black {
   background-image: linear-gradient(transparent 25%, #111111 80%); }
 
+.banner-top-gradient-grey2 {
+  background-image: linear-gradient(#DBDBDB, transparent 35%); }
+
+.banner-bottom-gradient-grey2 {
+  background-image: linear-gradient(transparent 25%, #DBDBDB 80%); }
+
 .banner-top-gradient-vmred {
   background-image: linear-gradient(#E10A0A, transparent 35%); }
 
@@ -14789,64 +14818,64 @@ img.mfp-img {
 
 /* just to randomise the height of the items */
 .grid-item1 {
-  height: 119px;
-  line-height: 119px; }
+  height: 130px;
+  line-height: 130px; }
 
 .grid-item2 {
-  height: 207px;
-  line-height: 207px; }
+  height: 137px;
+  line-height: 137px; }
 
 .grid-item3 {
-  height: 294px;
-  line-height: 294px; }
+  height: 206px;
+  line-height: 206px; }
 
 .grid-item4 {
-  height: 493px;
-  line-height: 493px; }
+  height: 244px;
+  line-height: 244px; }
 
 .grid-item5 {
-  height: 272px;
-  line-height: 272px; }
+  height: 243px;
+  line-height: 243px; }
 
 .grid-item6 {
+  height: 391px;
+  line-height: 391px; }
+
+.grid-item7 {
+  height: 102px;
+  line-height: 102px; }
+
+.grid-item8 {
+  height: 422px;
+  line-height: 422px; }
+
+.grid-item9 {
+  height: 228px;
+  line-height: 228px; }
+
+.grid-item10 {
+  height: 422px;
+  line-height: 422px; }
+
+.grid-item11 {
+  height: 212px;
+  line-height: 212px; }
+
+.grid-item12 {
+  height: 483px;
+  line-height: 483px; }
+
+.grid-item13 {
   height: 463px;
   line-height: 463px; }
 
-.grid-item7 {
-  height: 289px;
-  line-height: 289px; }
-
-.grid-item8 {
-  height: 160px;
-  line-height: 160px; }
-
-.grid-item9 {
-  height: 447px;
-  line-height: 447px; }
-
-.grid-item10 {
-  height: 477px;
-  line-height: 477px; }
-
-.grid-item11 {
-  height: 369px;
-  line-height: 369px; }
-
-.grid-item12 {
-  height: 326px;
-  line-height: 326px; }
-
-.grid-item13 {
-  height: 414px;
-  line-height: 414px; }
-
 .grid-item14 {
-  height: 413px;
-  line-height: 413px; }
+  height: 365px;
+  line-height: 365px; }
 
 .grid-item15 {
-  height: 142px;
-  line-height: 142px; }
+  height: 382px;
+  line-height: 382px; }
 
 @font-face {
   font-family: "VMCustomFont";
@@ -15202,3 +15231,21 @@ video {
   position: absolute;
   top: 0;
   left: 0; }
+
+.padding-gutter {
+  padding: 12px; }
+
+.padding-gutter-x {
+  padding: 0 12px; }
+
+.margin-gutter-xn {
+  margin: 0 -12px; }
+
+.padding-s {
+  padding: 16px; }
+
+.padding-m {
+  padding: 32px; }
+
+.padding-l {
+  padding: 48px; }
