@@ -15,7 +15,7 @@ $grey2:         #DBDBDB !default;
 // $grey5:         #FBFBFB !default;
 $vmred:           #E10A0A !default;
 $vmplum:          #322332 !default;
-$vmpurple:        #8A36F1 !default;
+$vmpurple:        #5F2878 !default;
 $vmpink:          #FF6EFF !default;
 $vmgreen:         #62F37B !default;
 $vmblue:          #005DF5 !default;
@@ -190,26 +190,26 @@ $serif-font-family: Georgia, Times, 'Times New Roman', serif !default;
 $monospace-font-family: 'Source Code Pro', Consolas, monospace !default;
 
 
-// @font-face {
-//     font-family: 'VMWhisper';
-//     // src: url('../iconfont/iconFont.eot');
-//     src:
-//     // url('../iconfont/iconFont.eot?#iefix') format('eot'),
-//     // url('../iconfont/iconFont.woff2') format('woff2'),
-//     // url('../iconfont/iconFont.woff') format('woff'),
-//     url('../fonts/VMCircularWhisperTT-Light.ttf') format('truetype'),
-//     // url('../iconfont/iconFont.svg#iconFont') format('svg');
-// }
-// @font-face {
-//     font-family: 'VMChat';
-//     // src: url('../iconfont/iconFont.eot');
-//     src:
-//     // url('../iconfont/iconFont.eot?#iefix') format('eot'),
-//     // url('../iconfont/iconFont.woff2') format('woff2'),
-//     // url('../iconfont/iconFont.woff') format('woff'),
-//     url('../fonts/VMCircularChatTT-Book.ttf') format('truetype'),
-//     url('../iconfont/iconFont.svg#iconFont') format('svg');
-// }
+@font-face {
+    font-family: 'VMWhisper';
+    // src: url('../iconfont/iconFont.eot');
+    src:
+    // url('../iconfont/iconFont.eot?#iefix') format('eot'),
+    // url('../iconfont/iconFont.woff2') format('woff2'),
+    // url('../iconfont/iconFont.woff') format('woff'),
+    url('../fonts/VMCircularWhisperTT-Light.ttf') format('truetype'),
+    // url('../iconfont/iconFont.svg#iconFont') format('svg');
+}
+@font-face {
+    font-family: 'VMChat';
+    // src: url('../iconfont/iconFont.eot');
+    src:
+    // url('../iconfont/iconFont.eot?#iefix') format('eot'),
+    // url('../iconfont/iconFont.woff2') format('woff2'),
+    // url('../iconfont/iconFont.woff') format('woff'),
+    url('../fonts/VMCircularChatTT-Book.ttf') format('truetype'),
+    // url('../iconfont/iconFont.svg#iconFont') format('svg');
+}
 
 /////////////////////////////////////////////
 /////////////////////////////////////////////
@@ -230,63 +230,32 @@ $margin:
 0
 , 1
 , 2
-, 3
 , 4
-, 5
-, 6
-, 7
 , 8
-, 9
 , 10
-, 15
-, 20
-, 25
+, 12
+, 16
+, 24
 , 30
-, 40
-, 50
-, 60
-, 70
-, 80
-, 90
-, 100
-, 120
-, 130
-, 140
-, 150
-, 160
-, 170
-, 180
-, 190
-, 200
-, 250
-, 300
+, 32
+, 48
+, 64
+
 ;
 $padding:
 0
 , 1
 , 2
-, 3
 , 4
-, 5
-, 6
-, 7
 , 8
-, 9
 , 10
-, 15
-, 20
-, 25
+, 12
+, 16
+, 24
 , 30
-, 40
-, 50
-, 60
-, 70
-, 80
-, 90
-, 100
-, 120
-, 130
-, 140
+, 32
+, 48
+, 64
 ;
 
 $font-size-min: 14 !default;
@@ -449,15 +418,16 @@ $transition: all .3s cubic-bezier(.645, .045, .355, 1) !default;
 // This map is used to automatically create all the responsive classes.
 
 // $container-width: 73.15rem !default;
-$container-width: 1170px !default;
+//$container-width: 1170px !default;
+$container-width: 1104px !default;
 $container-width-lrg: 2000px !default;
 $grid-columns: 12 !default;
 
-$breakpoint-sm: 32rem !default;
-$breakpoint-md: 40rem !default;
-$breakpoint-lg: 64rem !default;
-$breakpoint-xl: 90rem !default;
-$breakpoint-xxl: 120rem !default;
+// $breakpoint-sm: 32rem !default;
+// $breakpoint-md: 40rem !default;
+// $breakpoint-lg: 64rem !default;
+// $breakpoint-xl: 90rem !default;
+// $breakpoint-xxl: 120rem !default;
 
 $breakpoint-sm: 768px !default;
 $breakpoint-md: 992px !default;

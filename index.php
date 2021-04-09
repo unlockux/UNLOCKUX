@@ -13,9 +13,13 @@ $bodyColor = 'bg-trueblack';
             <h1 class="white">Unlock UX</h1>
             <span class="font-size-16 mono">A collection of pages, tests and fun.</span>
         </div>
-            <a href="/stream.php" class="button primary margin-10">Stream</a>
-            <a href="/cooper.php" class="button secondary margin-10">Cooper</a>
-            <a href="/accessibility.php" class="button primary margin-10">Accessibility</a>
+            <a href="/stream.php" class="white underline padding-10">Stream</a>
+            <a href="/cooper.php" class="white underline padding-10">Cooper</a>
+            <a href="/csm.php" class="white underline padding-10">csm</a>
+            <a href="/sizes.php" class="white underline padding-10">Sizes</a>
+            <a href="/strapi.php" class="white underline padding-10">Strapi</a>
+            <a href="/team.php" class="white underline padding-10">Team</a>
+            <a href="/accessibility.php" class="white underline padding-10">Accessibility</a>
     </div>
 
 </div>
