@@ -1343,10 +1343,10 @@ textarea {
   background-color: #FF6EFF; }
 
 .bg-vmgreen {
-  background-color: #62F37B; }
+  background-color: #348437; }
 
 .hover-bg-vmgreen:hover {
-  background-color: #62F37B; }
+  background-color: #348437; }
 
 .bg-vmblue {
   background-color: #005DF5; }
@@ -1646,7 +1646,7 @@ textarea {
   .bg-vmpink-small-up {
     background-color: #FF6EFF; }
   .bg-vmgreen-small-up {
-    background-color: #62F37B; }
+    background-color: #348437; }
   .bg-vmblue-small-up {
     background-color: #005DF5; }
   .bg-vmorange-small-up {
@@ -1727,7 +1727,7 @@ textarea {
   .bg-vmpink-medium-up {
     background-color: #FF6EFF; }
   .bg-vmgreen-medium-up {
-    background-color: #62F37B; }
+    background-color: #348437; }
   .bg-vmblue-medium-up {
     background-color: #005DF5; }
   .bg-vmorange-medium-up {
@@ -1808,7 +1808,7 @@ textarea {
   .bg-vmpink-large-up {
     background-color: #FF6EFF; }
   .bg-vmgreen-large-up {
-    background-color: #62F37B; }
+    background-color: #348437; }
   .bg-vmblue-large-up {
     background-color: #005DF5; }
   .bg-vmorange-large-up {
@@ -1889,7 +1889,7 @@ textarea {
   .bg-vmpink-xlarge-up {
     background-color: #FF6EFF; }
   .bg-vmgreen-xlarge-up {
-    background-color: #62F37B; }
+    background-color: #348437; }
   .bg-vmblue-xlarge-up {
     background-color: #005DF5; }
   .bg-vmorange-xlarge-up {
@@ -2798,10 +2798,10 @@ textarea {
   border-color: #FF6EFF; }
 
 .border-vmgreen {
-  border-color: #62F37B; }
+  border-color: #348437; }
 
 .hover-border-vmgreen:hover {
-  border-color: #62F37B; }
+  border-color: #348437; }
 
 .border-vmblue {
   border-color: #005DF5; }
@@ -3230,7 +3230,7 @@ textarea {
   color: #FF6EFF; }
 
 .vmgreen, .hover-color-vmgreen:hover:not(.active), .hover-vmgreen:hover:not(.active) {
-  color: #62F37B; }
+  color: #348437; }
 
 .vmblue, .hover-color-vmblue:hover:not(.active), .hover-vmblue:hover:not(.active) {
   color: #005DF5; }
@@ -8999,10 +8999,10 @@ textarea {
   background-image: linear-gradient(transparent 25%, #FF6EFF 80%); }
 
 .banner-top-gradient-vmgreen {
-  background-image: linear-gradient(#62F37B, transparent 35%); }
+  background-image: linear-gradient(#348437, transparent 35%); }
 
 .banner-bottom-gradient-vmgreen {
-  background-image: linear-gradient(transparent 25%, #62F37B 80%); }
+  background-image: linear-gradient(transparent 25%, #348437 80%); }
 
 .banner-top-gradient-vmblue {
   background-image: linear-gradient(#005DF5, transparent 35%); }
@@ -10782,64 +10782,64 @@ img.mfp-img {
 
 /* just to randomise the height of the items */
 .grid-item1 {
-  height: 383px;
-  line-height: 383px; }
+  height: 408px;
+  line-height: 408px; }
 
 .grid-item2 {
-  height: 114px;
-  line-height: 114px; }
+  height: 146px;
+  line-height: 146px; }
 
 .grid-item3 {
-  height: 217px;
-  line-height: 217px; }
+  height: 182px;
+  line-height: 182px; }
 
 .grid-item4 {
-  height: 197px;
-  line-height: 197px; }
+  height: 467px;
+  line-height: 467px; }
 
 .grid-item5 {
-  height: 472px;
-  line-height: 472px; }
+  height: 196px;
+  line-height: 196px; }
 
 .grid-item6 {
-  height: 434px;
-  line-height: 434px; }
+  height: 112px;
+  line-height: 112px; }
 
 .grid-item7 {
-  height: 311px;
-  line-height: 311px; }
+  height: 454px;
+  line-height: 454px; }
 
 .grid-item8 {
-  height: 333px;
-  line-height: 333px; }
+  height: 135px;
+  line-height: 135px; }
 
 .grid-item9 {
-  height: 197px;
-  line-height: 197px; }
+  height: 367px;
+  line-height: 367px; }
 
 .grid-item10 {
-  height: 312px;
-  line-height: 312px; }
+  height: 133px;
+  line-height: 133px; }
 
 .grid-item11 {
-  height: 168px;
-  line-height: 168px; }
+  height: 450px;
+  line-height: 450px; }
 
 .grid-item12 {
-  height: 498px;
-  line-height: 498px; }
+  height: 165px;
+  line-height: 165px; }
 
 .grid-item13 {
-  height: 136px;
-  line-height: 136px; }
+  height: 418px;
+  line-height: 418px; }
 
 .grid-item14 {
-  height: 237px;
-  line-height: 237px; }
+  height: 371px;
+  line-height: 371px; }
 
 .grid-item15 {
-  height: 422px;
-  line-height: 422px; }
+  height: 453px;
+  line-height: 453px; }
 
 @font-face {
   font-family: "VMCustomFont";
