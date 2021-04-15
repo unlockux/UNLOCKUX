@@ -11,7 +11,7 @@ $black:         #111111 !default;
 // $grey1:         #888888 !default;
 $grey2:         #DBDBDB !default;
 // $grey3:         #EFEFEF !default;
-// $grey4:         #F7F7F7 !default;
+$grey4:         #F7F7F7 !default;
 // $grey5:         #FBFBFB !default;
 $vmred:           #E10A0A !default;
 $vmplum:          #322332 !default;
@@ -38,7 +38,7 @@ $violet:           #5321BF !default; // AA
 $purple:           #340B8C !default; // AA
 $coral:            #F27294 !default; // White no, purple AA
 $peach:            #F8927C !default; // White no, purple AA
-// $darkpeach:        #EF775C !default;
+$darkpeach:        #EF775C !default;
 
 ////////////////////////////////////////////
 
@@ -57,9 +57,9 @@ $colors: (
 // "black-40":     $black-40,
 //"black-20":     $black-20,
 // "grey1":        $grey1,
- "grey2":        $grey2,
+"grey2":        $grey2,
 // "grey3":        $grey3,
-// "grey4":        $grey4,
+"grey4":        $grey4,
 // "grey5":        $grey5,
 "vmred":          $vmred,
 "vmplum":         $vmplum,
@@ -85,7 +85,7 @@ $colors: (
 "purple":       $purple,
 "coral":        $coral,
 "peach":        $peach,
-// "darkpeach":    $darkpeach,
+"darkpeach":    $darkpeach,
 
 ////////
 
@@ -430,6 +430,7 @@ $grid-columns: 12 !default;
 // $breakpoint-xl: 90rem !default;
 // $breakpoint-xxl: 120rem !default;
 
+$breakpoint-xs: 575px !default;
 $breakpoint-sm: 768px !default;
 $breakpoint-md: 992px !default;
 $breakpoint-lg: 1199px !default;
@@ -437,6 +438,7 @@ $breakpoint-xl: 1400px !default;
 $breakpoint-xxl: 120rem !default;
 
 $breakpoints: (
+xsmall-up: $breakpoint-xs,
 small-up: $breakpoint-sm,
 medium-up: $breakpoint-md,
 large-up: $breakpoint-lg,
@@ -446,7 +448,8 @@ xlarge-up: $breakpoint-xl,
 
 // Foundation grid names
 $grid-layout: (
-small: 0,
+xsmall: $breakpoint-xs,
+small: $breakpoint-sm,
 tablet: $breakpoint-sm,
 tablet-lrg: $breakpoint-md,
 medium: $breakpoint-md,

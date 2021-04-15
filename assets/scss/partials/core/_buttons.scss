@@ -40,8 +40,8 @@ button,.button,input[type="button"],input[type="reset"]{
   color: inherit;
   display: inline-block;
   padding: $button-padding-top $button-padding-x $button-padding-bottom;
-  font-size: 17px;
-  font-weight: 600;
+  font-size: 16px;
+  font-weight: 400;
   line-height: 1;
   padding: 10.5px 30px;
   text-decoration: none;
@@ -112,10 +112,10 @@ button,.button,input[type="button"],input[type="reset"]{
           display: block;
       }
   }
-  .vmprimary{
-      background-color: #5F2878;
-      width:280px;
-      line-height: 2;
+  &.vmprimary{
+      background-color: $vmred;
+      max-width:280px;
+      line-height: 1.5;
       color: white;
       &:hover{
           background-color: #3B164C;

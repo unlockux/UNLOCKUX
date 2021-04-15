@@ -47,10 +47,10 @@
 
 // // Font Weight
 //
-// $font-weight: 9 !default;
-// @for $i from 1 through $font-weight {
-//     .font-weight-#{$i}00{ font-weight: ($i * 100); }
-// }
+$font-weight: 9 !default;
+@for $i from 1 through $font-weight {
+    .font-weight-#{$i}00{ font-weight: ($i * 100); } 
+}
 //
 // @each $breakpoint-name, $breakpoint-value in $breakpoints {
 //     @include media-query($breakpoint-name) {

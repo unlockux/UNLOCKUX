@@ -82,7 +82,7 @@
         &#{$i} { width: $c; }
         &push-#{$i} { position: relative; left: $c; }
         &pull-#{$i} { position: relative; left: -$c; }
-        &offset-#{$i} { margin-left: $c; }
+        &offset-#{$i} { margin-left: $c; margin-right: $c }
     }
     &offset-0 { margin-left: 0; }
 }
