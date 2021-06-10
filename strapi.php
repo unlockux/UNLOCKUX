@@ -1,6 +1,10 @@
 <?php include( 'config.php' ); ?>
 <?php include( INCLUDES_DIR . 'header-meta.php'); ?>
 
+<div class="fixed top-0 left-0">
+    <a href="/" class="white fas fa-home bg-purple white padding-32"></a>
+</div>
+
 <div class="bg-purple height-v35 || flex justify-center items-center">
     <h1 class="white">Strapi</h1>
 </div>

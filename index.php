@@ -18,7 +18,7 @@ $bodyColor = 'bg-trueblack';
             <a href="/csm.php" class="white underline padding-10">csm</a>
             <a href="/sizes.php" class="white underline padding-10">Sizes</a>
             <a href="/strapi.php" class="white underline padding-10">Strapi</a>
-            <a href="/team.php" class="white underline padding-10">Team</a>
+            <!-- <a href="/team.php" class="white underline padding-10">Team</a> -->
             <a href="/accessibility.php" class="white underline padding-10">Accessibility</a>
     </div>
 
